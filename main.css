@@ -1,0 +1,245 @@
+
+/* inicio del encabezado */
+
+.encabezado-navegacion {
+    background-color: rgb(241, 241, 212);
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.encabezado-navegacion img {
+    width: 250px;
+    height: 235px;
+    position: relative;
+}
+
+
+.encabezado-navegacion ul {
+    list-style-type: none;
+}
+
+
+.encabezado-navegacion ul li {
+    display:inline-block;
+    margin: 70px 50px;
+    font-size: 55px;
+    font-family: 'Pacifico', cursive;
+      
+}
+/* fin del encabezado */
+
+/* comienzo del body del index.html */
+
+body {
+    background-image: url(public/ejemplo-plato-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cuerpo-titulo {
+    text-align: center;
+    font-size: 100px;
+    color: rgb(253, 253, 253);
+    background-color: rgb(252, 207, 8);
+    font-family: 'Grape Nuts', cursive;
+    
+    
+}
+
+.cuerpo-titulo h1 {
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.cuerpo-titulo h3 {
+    padding-bottom: 50px;
+    padding-left: 900px;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.cuerpo-horarios {
+    border-style:solid;
+    border-width: 10px;
+   height: 1080px;
+   background-image: url(public/horario.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.cuerpo-horario-tabla {
+    font-size: 50px;
+    text-align: center;
+    margin:0 auto;
+    border-style: dashed;
+    border-width: 10px;
+    width: 500px;
+    background-color: rgb(236, 195, 15);
+}
+
+/* estilo del footer */
+
+
+footer {
+    background-color: rgb(238, 131, 92);
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:left;
+}
+
+footer img{
+    width: 50px;
+    height:50px;
+    position: relative;
+}
+
+.redes {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 20px;
+    
+}
+
+/* inicio estilo atencion al cliente */
+
+.sugerencia {
+    background-color: bisque;
+}
+
+
+
+.titulo-sugerencia {
+    padding-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-family: 'Grape Nuts', cursive;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-sugerencia h1{
+    color: #0e5e1f;
+    font-size: 70px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+.titulo-sugerencia p {
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(0, 54, 36);
+}
+
+.formulario {
+    width: 100%;
+    font-size: 30px;
+    padding: 5px 10px;
+    
+}
+
+.formulario p {
+    text-align: center;
+    background-color: rgb(212, 247, 56);
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.formulario input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+}
+
+/* inicio estilo ubicacion */
+
+.ubicacion {
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+.ubicacion-titulo {
+    font-size: 100px;
+    font-family: 'Grape Nuts', cursive; 
+}
+
+.ubicacion-informacion {
+    font-size: 50px;
+    text-align: center;
+    margin:0 auto;
+    width: 750px;
+    background-color: rgb(236, 195, 15);
+}
+
+.ubicacion-lista {
+    list-style-type: none;
+}
+
+/* inicio estilo productos */
+
+.productos {
+    font-weight: normal;
+    font-size: 40px;
+    color: #ffcc00;
+    margin: 50px auto 12px;
+    padding: 50px 50px 0 50px;
+    background-color: white;
+    width: 550px;
+    height: 100px;
+    text-align: center;
+    font-family: 'Grape Nuts', cursive; 
+    
+}
+
+.productos-informacion ul {
+    list-style-type: none;
+}
+
+.productos-informacion {
+    font-size: 50px;
+    text-align: center;
+    margin:0 auto;
+    width: 900px;
+    background-color: rgb(236, 195, 15);
+}
+
+.productos-informacion h2 {
+    font-size: 100px;
+    background-color: #f1dd89;
+}
+
+.productos-informacion img {
+    display: block;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+}
+
+.tabla-productos {
+    font-size: 50px;
+    background-color: #f1dd89;
+    width: 50%;
+    margin: auto;
+
+}
+
+.tabla-productos tr td {
+    border: solid 1px
+}
+
+.tabla-productos tr th {
+    border: solid 1px ;
+}
