@@ -8,6 +8,8 @@
     <!-- Titulo de mi pagina -->
     <title>Ubicación</title>
 
+    <!-- link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- link para conectar mi css -->
     <link rel="stylesheet" href="../css/main.css">
@@ -39,28 +41,29 @@
 
         
 
-        <nav class="encabezado-navegacion">
-
-            <a href="../index.html"> <img src="../public/logo-maria.jpg" alt="logo-maria"></a>
-            
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="atencion-al-cliente.html">Atención al cliente</a>
-                </li>
-
-                <li>
-                    <a href="ubicacion.html">Ubicación</a>
-                </li>
-
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-            </ul>
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class="container-fluid">
+            <a class="logo-nav" href="../index.html"> <img src="../public/logo-maria.jpg" alt="logo-maria"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="atencion-al-cliente.html">Atención al cliente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
         </nav>
 
         <!-- header -->
@@ -69,19 +72,25 @@
 
         <section class="ubicacion">
 
-            <h1 class="ubicacion-titulo">Nuestro local</h1>
+            <div class="container">
+                <h1 class="ubicacion-titulo">Nuestro local</h1>
 
-            <h3>Encontranos en:</h3>
+                <h3>Encontranos en:</h3>
 
-            <div class="ubicacion-informacion">
+                <div class="row">
+                    <div class="ubicacion-informacion">
+                        <div class="col">
 
-                <p>Calle 148 n°1587 entre 15A y 16 Berazategui</p>
+                            <p>Calle 148 n°1587 entre 15A y 16 Berazategui</p>
 
-                <ul class="ubicacion-lista">
-                    <li>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.699617524958!2d-58.20967728371719!3d-34.76315887346077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f4b99660843%3A0x67a848a44afbfb91!2sMaria%20Casta%C3%B1a!5e0!3m2!1ses-419!2sar!4v1649519251399!5m2!1ses-419!2sar" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </li>
-                </ul>
+                            <ul class="ubicacion-lista">
+                                <li>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.699617524958!2d-58.20967728371719!3d-34.76315887346077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f4b99660843%3A0x67a848a44afbfb91!2sMaria%20Casta%C3%B1a!5e0!3m2!1ses-419!2sar!4v1649519251399!5m2!1ses-419!2sar" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>   
@@ -98,6 +107,7 @@
         </div>
     </footer>
 
-    
+    <!-- link de JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
