@@ -22,18 +22,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+<!-- link para conectar el logo de intagram -->
+    <script src="https://kit.fontawesome.com/a4bf204823.js" crossorigin="anonymous"></script>
+
 
 </head>
+
+<!-- body -->
 <body>
 
+    <!-- header -->
     <header class="encabezado">
 
         
-
+<!-- nav -->
         <nav class="encabezado-navegacion">
 
-           
-                <img src="../public/logo-maria.jpg" alt="logo-maria">
+            <a href="../index.html"> <img src="../public/logo-maria.jpg" alt="logo-maria"></a>
             
             <ul>
                 <li>
@@ -41,11 +50,11 @@
                 </li>
 
                 <li>
-                    <a href="atencion-al-cliente.html">Atencion al cliente</a>
+                    <a href="atencion-al-cliente.html">Atención al cliente</a>
                 </li>
 
                 <li>
-                    <a href="ubicacion.html">Ubicacion</a>
+                    <a href="ubicacion.html">Ubicación</a>
                 </li>
 
                 <li>
@@ -57,92 +66,96 @@
 
     </header>
 
-    <main>
+    <!-- main -->
+    <main class="producto">
 
         <section>
-            <h1 class="productos">Nuestros productos destacados!!</h1>
 
+            <div class="producto-estrella">
 
-            <div class="productos-informacion">
+                <div class="producto-estrella-parrafo">
+                    <h2>La estrella de María Castaña</h2>
 
-                <h2>Choco al cubo</h2>
+                    <h3>Cheese Cake</h3>
 
-                <ul>
-                    <li>
-                        <img src="../public/choco-al-cubo.jpg" alt="choco-al-cubo">
-                    </li>
+                    <p>Este postre es popular desde el siglo XX y se suele hacer a base de ricota, requesón, queso quark, azúcar. Tambien puede contener otros ingredientes, tales como: huevos, crema de leche, harina, chocolate, o frutas.
+                        <br>
+                        En este caso es de <b>Frambuesas y Chocolate Blanco</b>
+                    </p>
+                </div> 
 
-                <p>Torta de chocolate con <b>crema Bariloche </b>(chocolate, crema y dulce de leche)</p>
-
+                <img src="../public/cheese-cake.jpg" alt="cheese-cake">
             
-
-            
-
-                <h2>Brownie del bosque</h2>
-
-                <ul>
-                    <li>
-                        <img src="../public/brownie-del-bosque.jpg" alt="brownie-del-bosque">
-                    </li>
-                
-
-                <p>Brownie con <b>dulce de leche, crema y frutos rojos</b></p>
-
-            
-
-            
-
-                <h2>Cheese Cake</h2>
-                <ul>
-                    <li>
-                        <img src="../public/cheese-cake.jpg" alt="cheese-cake">
-                    </li>
-                </ul>
-                
-                <p>Cheese Cake de <b>frambuesas y chocolate blanco</b></p>
-
-
             </div>
 
-            <table class="tabla-productos">
+            <h2 class="titulo-otros-productos">Otros productos</h2>
 
-                <thead>
-                    <tr>
-                        <th>Producto</th>
-                        <th>Disponibilidad</th>
-                    </tr>
-                </thead>
+            <section class="otros">
+
+                <div class="otros-productos">
+                    <h2>Choco al cubo</h2>
+                    
+                    <img src="../public/choco-al-cubo.jpg" alt="choco-al-cubo">
+                
+                    <p>Torta de chocolate con <b>crema Bariloche </b>(chocolate, crema y dulce de leche)</p>
+                </div>
+
+                <div class="otros-productos">
+                    <h2>Brownie del bosque</h2>
+
+                    <img src="../public/brownie-del-bosque.jpg" alt="brownie-del-bosque">
+
+                    <p>Brownie con <b>dulce de leche, crema y frutos rojos</b></p>
+
+                </div>
+
+            </section>
 
 
-                <tbody>
-                    <tr>
-                        <td>Choco al cubo</td>
-                        <td>Si</td>
-                    </tr>
+            <section class="tabla">
 
-                    <tr>
-                        <td>Brownie del bosque</td>
-                        <td>Si</td>
-                    </tr>
+                <table class="tabla-productos">
 
-                    <tr>
-                        <td>Cheese Cake</td>
-                        <td>Si</td>
-                    </tr>
-                </tbody>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Disponibilidad</th>
+                        </tr>
+                    </thead>
 
-            </table>
+
+                    <tbody>
+                        <tr>
+                            <td>Choco al cubo</td>
+                            <td>Si</td>
+                        </tr>
+
+                        <tr>
+                            <td>Brownie del bosque</td>
+                            <td>Si</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cheese Cake</td>
+                            <td>Si</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                
+            </section>
 
         </section>
 
     </main>
 
+<!-- footer -->
     <footer>
-        <img src="../public/instagram-logo.jpg" alt="Instagram-logo">
 
-        <div class="redes">
-            <span>Seguinos en:</span>
-            <a href="https://www.instagram.com/maria.castana_/" target="_blank">Instagram</a>
+        <p>No olvides seguirnos en Instagram</p>
+
+        <div class="icono-redes">
+            <a href="https://www.instagram.com/maria.castana_/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
 

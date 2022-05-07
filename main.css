@@ -1,8 +1,14 @@
 
-/* inicio del encabezado */
+/* inicio del encabezado del index*/
+.encabezado-index {
+    background-image:url(public/mostrador.jpg);
+    background-size: cover;
+    height: 1400px;
+}
 
-.encabezado-navegacion {
-    background-color: rgb(241, 241, 212);
+
+.encabezado-navegacion-index  {
+    
     padding: 5px;
 
     display: flex;
@@ -11,10 +17,74 @@
     justify-content: space-between;
 }
 
+.encabezado-navegacion-index img {
+
+    width: 150px;
+    height: 145px;
+    position: relative;
+
+}
+
+.encabezado-navegacion-index ul li {
+    display:inline-block;
+    margin: 70px 50px;
+}
+
+.encabezado-navegacion-index ul li a {
+    color: rgb(245, 229, 8) ;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+}
+
+.encabezado-titulo {
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;    
+}
+
+
+.encabezado-titulo h1 {
+    padding-top: 5px;
+    margin-bottom: 5px;
+    font-size: 190px;
+    color: rgb(245, 229, 8);
+}
+
+.encabezado-titulo h3 {
+    padding-bottom: 5px;
+    padding-left: 900px;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 100px;
+    color: aliceblue;
+}
+
+.encabezado-titulo p {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: rgb(245, 229, 8);
+}
+
+/* navegacion de los otros html */
+
+.encabezado-navegacion {
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+
+    background-color: #ffcc00;
+
+    height: 150px;
+}
+
 
 .encabezado-navegacion img {
-    width: 250px;
-    height: 235px;
+    width: 150px;
+    height: 145px;
     position: relative;
 }
 
@@ -26,51 +96,26 @@
 
 .encabezado-navegacion ul li {
     display:inline-block;
-    margin: 70px 50px;
-    font-size: 55px;
-    font-family: 'Pacifico', cursive;
-      
+    margin: 70px 50px;   
 }
-/* fin del encabezado */
+
+.encabezado-navegacion ul li a {
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(248, 252, 249);
+    text-decoration: none;
+}
 
 /* comienzo del body del index.html */
-
-body {
-    background-image: url(public/ejemplo-plato-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.cuerpo-titulo {
-    text-align: center;
-    font-size: 100px;
-    color: rgb(253, 253, 253);
-    background-color: rgb(252, 207, 8);
-    font-family: 'Grape Nuts', cursive;
-    
-    
-}
-
-.cuerpo-titulo h1 {
-    padding-top: 5px;
-    margin-bottom: 5px;
-}
-
-.cuerpo-titulo h3 {
-    padding-bottom: 50px;
-    padding-left: 900px;
-    padding-top: 5px;
-    margin-top: 5px;
-}
 
 .cuerpo-horarios {
     border-style:solid;
     border-width: 10px;
-   height: 1080px;
-   background-image: url(public/horario.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
+    height: 1080px;
+    background-image: url(public/fondo-horarios.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .cuerpo-horario-tabla {
@@ -85,43 +130,42 @@ body {
 
 /* estilo del footer */
 
-
-footer {
-    background-color: rgb(238, 131, 92);
-    height: 50px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:left;
+footer p {
+    font-family: 'Abril Fatface', cursive;  
+    color: aliceblue;
+    text-align: center;
+    background-color: #ff6961;
+    margin: 0;
 }
 
-footer img{
-    width: 50px;
-    height:50px;
-    position: relative;
-}
-
-.redes {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0 20px;
-    font-size: 20px;
-    
+.icono-redes {
+    text-align: center;
+    background-color: #f5443b;
 }
 
 /* inicio estilo atencion al cliente */
 
+
+.contenido-atencion {
+    background-image: url(public/ejemplo-plato-3.jpg);
+    background-repeat:space;
+    background-size: contain;
+}
+
 .sugerencia {
     background-color: bisque;
+    width: 1090px;
+    height: 1000px;
+    margin: auto;
 }
 
 
 
 .titulo-sugerencia {
     padding-left: 35px;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 25px;
-    font-family: 'Grape Nuts', cursive;
+    font-family: 'Abril Fatface', cursive; 
 
     display: flex;
     flex-direction: column;
@@ -130,29 +174,31 @@ footer img{
 }
 
 .titulo-sugerencia h1{
-    color: #0e5e1f;
+    color: #ffcc00;
     font-size: 70px;
     font-weight: bold;
     background-color: aliceblue;
 }
 
-.titulo-sugerencia p {
-    font-size: 50px;
-    font-weight: 800;
-    color: rgb(0, 54, 36);
+.titulo-sugerencia {
+    font-size: 30px;
+    color: rgb(10, 10, 10);
 }
 
 .formulario {
     width: 100%;
     font-size: 30px;
     padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
 .formulario p {
     text-align: center;
-    background-color: rgb(212, 247, 56);
     width: 400px;
+    height: 120px;
     text-align: center;
     margin: 0 auto;
 }
@@ -164,24 +210,45 @@ footer img{
     text-align: center;
 }
 
+.formulario img {
+    width: 550px;
+    height: 450px;
+
+}
+
 /* inicio estilo ubicacion */
+
+.contenido-ubicacion {
+    background-image: url(public/atencion-cliente-fondo.jpg);
+    background-repeat: space;
+    background-size: contain;
+}
 
 .ubicacion {
     text-align: center;
     background-color: blanchedalmond;
+    width: 1500px;
+    margin: auto;
+    height: 1000px;
 }
 
 .ubicacion-titulo {
     font-size: 100px;
-    font-family: 'Grape Nuts', cursive; 
+    font-family: 'Abril Fatface', cursive;  
+    margin: 0; 
 }
 
 .ubicacion-informacion {
     font-size: 50px;
+    font-family: 'Pacifico', cursive;
     text-align: center;
     margin:0 auto;
-    width: 750px;
+    width: 1500px;
     background-color: rgb(236, 195, 15);
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ubicacion-lista {
@@ -190,50 +257,100 @@ footer img{
 
 /* inicio estilo productos */
 
-.productos {
-    font-weight: normal;
-    font-size: 40px;
-    color: #ffcc00;
-    margin: 50px auto 12px;
-    padding: 50px 50px 0 50px;
-    background-color: white;
-    width: 550px;
-    height: 100px;
-    text-align: center;
-    font-family: 'Grape Nuts', cursive; 
+.producto {
+    background-color: #f8db68;
     
 }
 
-.productos-informacion ul {
+.producto-estrella  {
     list-style-type: none;
+    padding: 15px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.productos-informacion {
+.producto-estrella-parrafo {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-estrella-parrafo h2 {
     font-size: 50px;
+    font-family: 'Abril Fatface', cursive;  
+    color: aliceblue;
+}
+
+.producto-estrella-parrafo h3 {
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    background-color: aliceblue;
+    color:#ffcc00;
     text-align: center;
-    margin:0 auto;
-    width: 900px;
-    background-color: rgb(236, 195, 15);
 }
 
-.productos-informacion h2 {
-    font-size: 100px;
-    background-color: #f1dd89;
+.producto-estrella-parrafo p {
+    max-width: 600px;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
 }
 
-.productos-informacion img {
-    display: block;
-    width: 450px;
-    height: 450px;
+.producto-estrella img {
+    width: 650px;
+    height: 650px;
+    margin: 50px 50px;
+}
+
+.titulo-otros-productos {
+    width: 500px;
     margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Abril Fatface', cursive;  
+    color: #84b6f4;
+    background-color: #fdcae1;
+}
+
+.otros {
+    display:flex ;
+    justify-content:space-around ;
+    align-items: center;
+    border-width: 15px;
+    
+}
+
+.otros-productos {
+    background-color: aliceblue;
+    margin: 15px;
+    width: 600px;
+    text-align: center;
+}
+
+.otros-productos img {
+    width: 500px;
+    height: 400px;
+}
+
+.otros-productos h2 {
+    font-family: 'Pacifico', cursive;
+    background-color:#fdcae1 ; 
+}
+
+.otros-productos p {
+    font-family:'Abril Fatface', cursive;
+}
+
+.tabla {
+    padding: 100px ;
 }
 
 .tabla-productos {
     font-size: 50px;
     background-color: #f1dd89;
-    width: 50%;
-    margin: auto;
-
+    width: 80%;
+    margin: auto; 
+    text-align: center;
 }
 
 .tabla-productos tr td {
