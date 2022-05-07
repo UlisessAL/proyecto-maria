@@ -97,11 +97,16 @@ footer img {
     padding-bottom: 20px;
 }
 
+.instagram-web {
+    padding-bottom: 10px;
+}
+
 .derechos-reservados {
     font-family: 'Abril Fatface', cursive;  
     color: rgb(20, 2, 2);
     text-align: center;
 }
+
 
 /* inicio estilo atencion al cliente */
 
@@ -741,7 +746,7 @@ footer img {
 .cuerpo-horarios {
     border-style:solid;
     border-width: 10px;
-    height: 900px;
+    height: 800px;
     background-image: url(../public/fondo-horarios.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -749,13 +754,13 @@ footer img {
 }
 
 .cuerpo-horario-tabla {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     margin:0 auto;
     border-style: dashed;
     border-width: 10px;
-    width: 400px;
-    height:880px;
+    width: 380px;
+    height:780px;
     background-color: rgb(236, 195, 15);
 
     display: flex;
@@ -764,6 +769,7 @@ footer img {
 }
 .cuerpo-horario-tabla h2 {
     padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 .cuerpo-horario-tabla ul {
@@ -1076,7 +1082,7 @@ footer img {
 .cuerpo-horarios {
     border-style:solid;
     border-width: 10px;
-    height: 1040px;
+    height: 920px;
     background-image: url(../public/fondo-horarios.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1084,18 +1090,22 @@ footer img {
 }
 
 .cuerpo-horario-tabla {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     margin:0 auto;
     border-style: dashed;
     border-width: 10px;
     width: 500px;
-    height: 1020px;
+    height: 900px;
     background-color: rgb(236, 195, 15);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.cuerpo-horario-tabla h2 {
+    font-size: 35px;
 }
 
 .cuerpo-horario-tabla ul {
