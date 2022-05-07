@@ -16,7 +16,7 @@
 }
 
 .nav-link {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .encabezado-titulo {
@@ -24,7 +24,7 @@
     font-family: 'Abril Fatface', cursive;
 
     padding-top: 100px;
-    margin-top: 70px;
+    margin-top: 150px;
     
 
 }
@@ -83,17 +83,24 @@
 
 /* estilo del footer */
 
-footer p {
-    font-family: 'Abril Fatface', cursive;  
-    color: aliceblue;
-    text-align: center;
-    background-color: #ff6961;
-    margin: 0;
+footer {
+    background-color:#fffec2 ;
+    padding-top: 20px;
 }
 
-.icono-redes {
+footer img {
+    width: 200px;
+    height: 250px;
+}
+
+.estilo-footer{
+    padding-bottom: 20px;
+}
+
+.derechos-reservados {
+    font-family: 'Abril Fatface', cursive;  
+    color: rgb(20, 2, 2);
     text-align: center;
-    background-color: #f5443b;
 }
 
 /* inicio estilo atencion al cliente */
@@ -142,9 +149,13 @@ footer p {
 
 .ubicacion-titulo {
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Abril Fatface', cursive;  
     margin: 0; 
+}
+
+.ubicacion-h3 {
+    font-size: 15px;
 }
 
 .ubicacion-informacion {
@@ -377,58 +388,26 @@ footer p {
     height: 1000px;
 }
 
-
-.encabezado-navegacion-index  {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.encabezado-navegacion-index img {
-
-    width: 100px;
-    height: 100px;
-    position: relative;
-    padding-left: 10px;
-
-}
-
-.encabezado-navegacion-index ul li {
-    display: inline-block;
-    margin: 30px 20px;
-    
-}
-
-.encabezado-navegacion-index ul li a {
-    color: rgb(245, 229, 8) ;
-    font-size: 18px;
-    font-family: 'Pacifico', cursive;
-    text-decoration: none;
-}
-
 .encabezado-titulo {
     text-align: center;
     font-family: 'Abril Fatface', cursive;
 
-    padding-top: 130px;
+    padding-top: 200px;
     margin-top: 120px;
-    
 
 }
 
 
 .encabezado-titulo h1 {
     margin-bottom: 5px;
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(245, 229, 8);
 }
 
 .encabezado-titulo h3 {
     text-align: center;
-    font-size: 40px;
-    color: #fdcae1;
+    font-size: 30px;
+    color:#ff6961;
 }
 
 .encabezado-titulo p {
@@ -436,6 +415,11 @@ footer p {
     font-size: 20px;
     color: rgb(245, 229, 8);
     padding-bottom: 20px;
+}
+
+/* Footer */
+.instagram-web {
+    padding-left: 50px;
 }
 
 /* inicio  seccion atencion al cliente */
@@ -689,9 +673,16 @@ footer p {
 
 }
 
-/* inicio resolucion 1024px para solucionar un problema en la imagen de fondo de la pagina ubicacion */
+/* inicio resolucion 1024px para solucionar un problema en la imagen de fondo de la pagina ubicacion y footer*/
 @media screen and (min-width: 1024px){
-.contenido-ubicacion {
+
+/* Footer */
+.instagram-web {
+    padding-left: 100px;
+}
+
+/* Ubicacion */
+    .contenido-ubicacion {
     background-image: url(../public/atencion-cliente-fondo.jpg);
     background-size: contain;
     background-repeat:space;
@@ -715,26 +706,25 @@ footer p {
     text-align: center;
     font-family: 'Abril Fatface', cursive;
 
-    padding-top: 90px;
-    margin-top: 90px;
+    padding-top: 190px;
 }
 
 
 .encabezado-titulo h1 {
     margin-bottom: 5px;
-    font-size: 80px;
+    font-size: 50px;
     color: rgb(245, 229, 8);
 }
 
 .encabezado-titulo h3 {
     text-align: center;
-    font-size: 60px;
-    color: #fdcae1;
+    font-size: 40px;
+    color: #ff6961;
 }
 
 .encabezado-titulo p {
     font-family: 'Pacifico', cursive;
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(245, 229, 8);
     padding-bottom: 20px;
 }
@@ -771,6 +761,11 @@ footer p {
     list-style-type: none;
 }
 
+/* Footer */
+.instagram-web {
+    padding-left: 250px;
+}
+
 /* inicio  seccion atencion al cliente */
 
 .contenido-atencion {
@@ -799,7 +794,7 @@ footer p {
     align-items: center;
     justify-content: center;
 
-    font-size: 20px;
+    font-size: 15px;
     color: rgb(10, 10, 10);
 }
 
@@ -895,14 +890,14 @@ footer p {
 }
 
 .producto-estrella-parrafo h2 {
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Abril Fatface', cursive;  
     color: aliceblue;
     text-align: center;
 }
 
 .producto-estrella-parrafo h3 {
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Pacifico', cursive;
     background-color: aliceblue;
     color:#ffcc00;
@@ -1049,7 +1044,7 @@ footer p {
     padding-top: 100px;
     margin-bottom: 5px;
     margin-top: 100px;
-    font-size: 150px;
+    font-size: 90px;
     color: rgb(245, 229, 8);
 }
 
@@ -1059,8 +1054,8 @@ footer p {
     padding-top: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 90px;
-    color: aliceblue;
+    font-size: 60px;
+    color: #ff6961;
 }
 
 .encabezado-titulo p {
