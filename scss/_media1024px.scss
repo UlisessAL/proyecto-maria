@@ -1,0 +1,15 @@
+/* inicio resolucion 1024px para solucionar un problema en la imagen de fondo de la pagina ubicacion y footer*/
+@media screen and (min-width: 1024px){
+
+    /* Footer */
+    .instagram-web {
+        padding-left: 100px;
+    }
+    
+    /* Ubicacion */
+        .contenido-ubicacion {
+        background-image: url(../public/atencion-cliente-fondo.jpg);
+        background-size: contain;
+        background-repeat:space;
+    }
+}

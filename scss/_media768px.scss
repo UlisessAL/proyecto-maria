@@ -1,0 +1,286 @@
+/* inicio de la configuracion media para 768px */
+
+@media screen and (min-width:768px) {
+    
+    
+    /* inicio del encabezado del index*/
+    .encabezado-index {
+        background-image: url(../public/mostrador.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 1000px;
+
+        .encabezado-titulo {
+            text-align: center;
+            font-family: 'Abril Fatface', cursive;
+        
+            padding-top: 200px;
+            margin-top: 120px;
+
+            h1 {
+                margin-bottom: 5px;
+                font-size: 40px;
+                color: rgb(245, 229, 8);
+            }
+            
+            h3 {
+                text-align: center;
+                font-size: 30px;
+                color:$color-subtitle;
+            }
+            
+            p {
+                font-family: 'Pacifico', cursive;
+                font-size: 20px;
+                color: rgb(245, 229, 8);
+                padding-bottom: 20px;
+            }        
+        }
+    }
+
+    /* Footer */
+    .instagram-web {
+        padding-left: 50px;
+    }
+    
+    /* inicio  seccion atencion al cliente */
+    
+    .contenido-atencion {
+        background-color: $background-sugerencia;
+
+        .sugerencia {
+            background-color: $background-sugerencia;
+            width: 700px;
+            height: 750px;
+            margin: auto;
+
+            .titulo-sugerencia {
+                padding-left: 35px;
+                margin-top: 0px;
+                margin-bottom: 25px;
+                font-family: 'Abril Fatface', cursive; 
+            
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            
+                font-size: 15px;
+                color: rgb(10, 10, 10);
+
+                h1{
+                    color: #ffcc00;
+                    font-size: 30px;
+                    font-weight: bold;
+                    background-color: aliceblue;
+                }            
+            }
+        }
+    }
+
+    /* inicio seccion ubicacion */
+    
+    .contenido-ubicacion {
+        background-image: url(../public/atencion-cliente-fondo.jpg);
+        background-size: contain;
+    
+        display: grid;
+        grid-template-areas: 
+        "titulo "
+        "subtitulo "
+        "calle "
+        "mapa ";
+
+        .ubicacion {
+            text-align: center;
+            background-color: blanchedalmond;
+            width: 500px;
+            height: 600px;
+            margin: auto;
+
+            .ubicacion-titulo {
+                grid-area: titulo;
+                padding-top: 20px;
+                font-size: 30px;
+                font-family: 'Abril Fatface', cursive;  
+                margin: 0; 
+            }
+
+            h3 {
+                grid-area: subtitulo;
+            }
+
+            .ubicacion-informacion {
+                font-size: 15px;
+                font-family: 'Pacifico', cursive;
+                text-align: center;
+            
+            
+                margin:0 auto;
+                background-color: rgb(236, 195, 15);
+
+                p {
+                    grid-area: calle;
+                }
+
+                .ubicacion-lista {
+                    list-style-type: none;
+                    grid-area: mapa;
+
+                    li iframe {
+                        height: 400px;
+                        width: 400px;
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }    
+    }
+    /* inicio seccion productos */
+    
+    .producto {
+        background-color: #f8db68;
+
+        .producto-estrella  {
+            list-style-type: none;
+            padding: 15px;
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            
+            .producto-estrella-parrafo {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 25px;
+                    font-family: 'Abril Fatface', cursive;  
+                    color: aliceblue;
+                    text-align: center;
+                }
+                
+                h3 {
+                    font-size: 20px;
+                    font-family: 'Pacifico', cursive;
+                    background-color: aliceblue;
+                    color:#ffcc00;
+                    text-align: center;
+                }
+                
+                p {
+                    max-width: 600px;
+                    font-size: 15px;
+                    font-family: 'Pacifico', cursive;
+                }                
+            }
+            img {
+                width: 300px;
+                height: 300px;
+                margin: 20px 20px;
+            }
+        }
+
+        .contenedor-titulo-otros-productos {
+            height: 100px;
+        
+            display: flex;
+            justify-items: center;
+
+            .titulo-otros-productos {
+                width: 500px;
+                margin: auto;
+                text-align: center;
+                font-size: 20px;
+                font-family: 'Abril Fatface', cursive;  
+                color: #84b6f4;
+                background-color: #fdcae1;
+            }
+        }
+
+        .otros {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            align-items: center;
+            grid-row-gap:0;
+            border-width: 15px;
+            
+            .otros-productos {
+                background-color: aliceblue;
+                margin: 30px;
+                width: 250px;
+                text-align: center;
+                height: 250px;
+            
+                display: flex;
+                flex-direction: column;
+
+                .otros-productos h2 {
+                    font-family: 'Pacifico', cursive;
+                    background-color:#fdcae1 ; 
+                    font-size: 10px;
+                }
+
+                .otros-productos img {
+                    width: 200px;
+                    height: 200px;
+                
+                    align-self: center;
+                }
+                
+            }
+        }
+
+        .contenedor-titulo-bebidas {
+            height: 40px;
+            padding-top: 30px;
+        
+            display: flex;
+            justify-items: center;
+
+            .titulo-bebidas {
+                width: 500px;
+                margin: auto;
+                text-align: center;
+                font-size: 20px;
+                font-family: 'Abril Fatface', cursive;  
+                color: #84b6f4;
+                background-color: #fdcae1;
+            }
+        }
+
+        .bebidas {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            align-items: center;
+            grid-row-gap: 0;
+            border-width: 15px;
+
+            .bebidas-productos {
+                background-color: aliceblue;
+                margin: 30px;
+                width: 250px;
+                text-align: center;
+                height: 250px;
+            
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-family: 'Pacifico', cursive;
+                    background-color:#fdcae1 ; 
+                    font-size: 10px;
+                }
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                
+                    align-self: center;
+                }
+            }
+        }            
+    }
+}

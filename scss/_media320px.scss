@@ -1,0 +1,396 @@
+/* inicio del encabezado del index*/
+.encabezado-index {
+    background-image: url(../public/limonada-frutos-rojos.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+
+    .logo-nav img {
+
+        width: 50px;
+        height: 50px;
+        position: relative;
+    
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .encabezado-titulo {
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+    
+        padding-top: 100px;
+        margin-top: 150px;
+        
+        h1 {
+            margin-bottom: 5px;
+            font-size: 30px;
+            color: rgb(245, 229, 8);
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 20px;
+            color:rgb(12, 251, 251);
+        }
+
+        p {
+            font-family: 'Pacifico', cursive;
+            font-size: 10px;
+            color: rgb(245, 229, 8);
+            padding-bottom: 20px;
+        }
+        
+    }
+}
+
+// Encabezado otros html
+.encabezado {
+    .logo-nav img {
+
+        width: 50px;
+        height: 50px;
+        position: relative;
+    
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+}
+
+
+
+/* comienzo del body del index.html */
+
+.cuerpo-horarios {
+    border-style:solid;
+    border-width: 10px;
+    background-image: url(../public/fondo-horarios.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .cuerpo-horario-tabla {
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+        border-style: dashed;
+        border-width: 10px;
+        width: 200px;
+        background-color: rgb(236, 195, 15);
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                padding-right: 25px;
+            }
+        }
+    }
+}
+
+/* estilo del footer */
+
+footer {
+    background-color:#fffec2 ;
+    padding-top: 20px;
+
+    .estilo-footer{
+        padding-bottom: 20px;
+
+        img {
+            width: 286px;
+            height: 250px;
+        }
+        
+        .instagram-web {
+            padding-bottom: 10px;
+        }
+    }
+
+    .derechos-reservados {
+        font-family: 'Abril Fatface', cursive;  
+        color: rgb(20, 2, 2);
+        text-align: center;
+    }
+}
+
+/* inicio estilo atencion al cliente */
+
+.sugerencia {
+    background-color: $background-sugerencia;
+    margin: auto;
+    height: 550px;
+
+    .titulo-sugerencia {
+        padding-top: 50px;
+        margin-bottom: 25px;
+        font-family: 'Abril Fatface', cursive; 
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 10px;
+        color: rgb(10, 10, 10);
+        text-align: center;
+
+        h1{
+            color: #ffcc00;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: aliceblue;
+        }
+    }
+}
+
+/* inicio estilo ubicacion */
+
+.contenido-ubicacion {
+    background-color: blanchedalmond;
+
+    .ubicacion {
+        text-align: center;
+        background-color: blanchedalmond;
+        margin: auto; 
+
+        .ubicacion-titulo {
+            padding-top: 20px;
+            font-size: 20px;
+            font-family: 'Abril Fatface', cursive;  
+            margin: 0; 
+        }
+
+        .ubicacion-h3 {
+            font-size: 15px;
+        }
+
+        .ubicacion-informacion {
+            font-size: 15px;
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            background-color: rgb(236, 195, 15);
+        
+            width: 100%;
+
+            .ubicacion-lista {
+                list-style-type: none;
+            }
+            
+            li iframe {
+                height: 400px;
+                width: 300px;
+                padding-right: 70px;
+            }
+        }
+    }
+}
+
+
+/* inicio estilo productos */
+
+.producto {
+    background-color: #f8db68;
+    
+    .producto-estrella  {
+        list-style-type: none;
+        padding: 15px;
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        /* Animaciones */
+        animation-name: fade-in;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-duration: 2s;
+        animation-delay: .5s;
+
+        @keyframes fade-in {
+            0% {
+                transform:translateX(800px);
+            }
+        
+            50%{
+                transform:rotateY(200deg);
+            }
+        
+            100%{
+                transform:translateX(0px);
+            }
+        }
+
+        .producto-estrella-parrafo {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 20px;
+                font-family: 'Abril Fatface', cursive;  
+                color: aliceblue;
+                text-align: center;
+            }
+            
+            h3 {
+                font-size: 15px;
+                font-family: 'Pacifico', cursive;
+                background-color: aliceblue;
+                color:#ffcc00;
+                text-align: center;
+            }
+            
+            p {
+                max-width: 600px;
+                font-size: 10px;
+                font-family: 'Pacifico', cursive;
+            }
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            margin: 20px 20px;
+        }
+        
+    }
+
+    .contenedor-titulo-otros-productos {
+        height: 100px;
+        display: flex;
+        justify-items: center;
+    
+        .titulo-otros-productos {
+            width: 500px;
+            margin: auto;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Abril Fatface', cursive;  
+            color: #84b6f4;
+            background-color: #fdcae1;
+        }
+    }
+
+    .otros {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap:0;
+        border-width: 15px;
+        
+        .otros-productos {
+            background-color: aliceblue;
+            margin: 30px;
+            width: 250px;
+            text-align: center;
+            height: 250px;
+        
+            display: flex;
+            flex-direction: column;
+        
+            /* Transiciones */
+            transition-property: all;
+            transition-duration: 1s;
+            transition-delay: .5s;
+            transition-timing-function: ease;
+            
+            &:hover {
+                transform: scale(1.2,1.2);   
+            }
+            
+            h2 {
+                font-family: 'Pacifico', cursive;
+                background-color:#fdcae1 ; 
+                font-size: 10px;
+                height: 20px;
+                line-height: 20px;
+                margin-top: 10px;
+            }
+            
+            img {
+                width: 200px;
+                height: 200px;
+                align-self: center;
+            }
+            
+        }
+        
+    }
+    
+    .contenedor-titulo-bebidas {
+        height: 40px;
+        padding-top: 30px;
+    
+        display: flex;
+        justify-items: center;
+    
+        .titulo-bebidas {
+            width: 500px;
+            margin: auto;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Abril Fatface', cursive;  
+            color: #84b6f4;
+            background-color: #fdcae1;
+        }
+        
+    }
+    
+    .bebidas {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 0;
+        border-width: 15px;
+    
+        .bebidas-productos {
+            background-color: aliceblue;
+            margin: 30px;
+            width: 250px;
+            text-align: center;
+            height: 250px;
+        
+            display: flex;
+            flex-direction: column;
+        
+            /* Transiciones */
+            transition-property: all;
+            transition-duration: 1s;
+            transition-delay: .5s;
+            transition-timing-function: ease;
+    
+            &:hover {
+                transform: scale(1.2,1.2);  
+            }
+            
+            h2 {
+                font-family: 'Pacifico', cursive;
+                background-color:#fdcae1 ; 
+                font-size: 10px;
+                height: 20px;
+                line-height: 20px;
+                margin-top: 10px;
+            }
+    
+            img {
+                width: 200px;
+                height: 200px;
+                align-self: center;
+            }
+            
+        }
+    }
+    
+}
+
