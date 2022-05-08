@@ -1129,6 +1129,8 @@ footer img {
 
 .titulo-sugerencia {
     padding-left: 35px;
+    padding-bottom: 100px;
+    padding-top: 90px;
     margin-top: 0px;
     margin-bottom: 25px;
     font-family: 'Abril Fatface', cursive; 
@@ -1138,13 +1140,13 @@ footer img {
     align-items: center;
     justify-content: center;
 
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(10, 10, 10);
 }
 
 .titulo-sugerencia h1{
     color: #ffcc00;
-    font-size: 70px;
+    font-size: 40px;
     font-weight: bold;
     background-color: aliceblue;
 }
@@ -1173,7 +1175,7 @@ footer img {
 }
 
 .ubicacion-titulo {
-    font-size: 90px;
+    font-size: 50px;
     font-family: 'Abril Fatface', cursive;  
     margin: 0; 
 }
@@ -1183,7 +1185,7 @@ footer img {
 }
 
 .ubicacion-informacion {
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Pacifico', cursive;
     text-align: center;
     margin:0 auto;
