@@ -1,33 +1,91 @@
 /* inicio del encabezado del index*/
-.encabezado-index {
+.encabezado-index .logo-nav img {
+  width: 50px;
+  height: 50px;
+  position: relative; }
+
+.encabezado-index .nav-link {
+  font-size: 20px; }
+
+.cuerpo {
   background-image: url(../public/limonada-frutos-rojos.jpg);
   background-size: cover;
   background-position: center;
   height: 800px; }
-  .encabezado-index .logo-nav img {
-    width: 50px;
-    height: 50px;
-    position: relative; }
-  .encabezado-index .nav-link {
-    font-size: 20px; }
-  .encabezado-index .encabezado-titulo {
+  .cuerpo .encabezado-titulo {
     text-align: center;
     font-family: 'Abril Fatface', cursive;
-    padding-top: 100px;
-    margin-top: 150px; }
-    .encabezado-index .encabezado-titulo h1 {
+    padding-top: 100px; }
+    .cuerpo .encabezado-titulo h1 {
       margin-bottom: 5px;
       font-size: 30px;
       color: #f5e508; }
-    .encabezado-index .encabezado-titulo h3 {
+    .cuerpo .encabezado-titulo h3 {
       text-align: center;
       font-size: 20px;
       color: #0cfbfb; }
-    .encabezado-index .encabezado-titulo p {
+    .cuerpo .encabezado-titulo p {
       font-family: 'Pacifico', cursive;
       font-size: 10px;
       color: #f5e508;
       padding-bottom: 20px; }
+  .cuerpo .dias-martes {
+    color: #f9baba; }
+  .cuerpo .dias-domingo {
+    color: #fc8787; }
+  .cuerpo .dias-lunes {
+    color: #8a8989; }
+  .cuerpo .horarios, .cuerpo .pet-friendly {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #84b6f4;
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    height: 320px;
+    margin: auto; }
+    .cuerpo .horarios h2, .cuerpo .pet-friendly h2 {
+      border-style: solid;
+      border-width: 5px;
+      border-color: #84b6f4;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      background-color: aqua;
+      font-family: 'Pacifico', cursive; }
+    .cuerpo .horarios p, .cuerpo .pet-friendly p {
+      font-size: 15px;
+      padding-top: 10px; }
+    .cuerpo .horarios ul, .cuerpo .pet-friendly ul {
+      list-style-type: none;
+      padding-top: 20px; }
+      .cuerpo .horarios ul li, .cuerpo .pet-friendly ul li {
+        font-size: 15px; }
+    .cuerpo .horarios .dias-lunes, .cuerpo .pet-friendly .dias-lunes {
+      font-size: 10px;
+      margin-bottom: 10px; }
+    .cuerpo .horarios .publicidad-ig, .cuerpo .pet-friendly .publicidad-ig {
+      background-color: #84b6f4;
+      height: 20px;
+      font-size: 15px; }
+  .cuerpo .pet-friendly {
+    margin-top: 50px;
+    height: 100px;
+    font-family: 'Pacifico', cursive; }
+    .cuerpo .pet-friendly h2 {
+      border-style: solid;
+      border-width: 5px;
+      border-color: #84b6f4;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      background-color: aqua;
+      font-family: 'Pacifico', cursive; }
+    .cuerpo .pet-friendly p {
+      font-size: 15px;
+      padding-top: 10px; }
 
 .encabezado .logo-nav img {
   width: 50px;
@@ -36,30 +94,6 @@
 
 .encabezado .nav-link {
   font-size: 20px; }
-
-/* comienzo del body del index.html */
-.cuerpo-horarios {
-  border-style: solid;
-  border-width: 10px;
-  background-image: url(../public/fondo-horarios.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
-  .cuerpo-horarios .cuerpo-horario-tabla {
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-    border-style: dashed;
-    border-width: 10px;
-    width: 200px;
-    background-color: #ecc30f;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .cuerpo-horarios .cuerpo-horario-tabla ul {
-      list-style-type: none; }
-      .cuerpo-horarios .cuerpo-horario-tabla ul li {
-        padding-right: 25px; }
 
 /* estilo del footer */
 footer {
@@ -267,29 +301,38 @@ footer {
 /* inicio de la configuracion media para 768px */
 @media screen and (min-width: 768px) {
   /* inicio del encabezado del index*/
-  .encabezado-index {
+  .cuerpo {
     background-image: url(../public/mostrador.jpg);
     background-size: cover;
     background-position: center;
     height: 1000px; }
-    .encabezado-index .encabezado-titulo {
-      text-align: center;
-      font-family: 'Abril Fatface', cursive;
-      padding-top: 200px;
-      margin-top: 120px; }
-      .encabezado-index .encabezado-titulo h1 {
-        margin-bottom: 5px;
-        font-size: 40px;
-        color: #f5e508; }
-      .encabezado-index .encabezado-titulo h3 {
+    .cuerpo .informacion {
+      display: grid;
+      grid-template-areas: "titulo titulo" "horarios pet"; }
+      .cuerpo .informacion .encabezado-titulo {
         text-align: center;
-        font-size: 30px;
-        color: #ff6961; }
-      .encabezado-index .encabezado-titulo p {
-        font-family: 'Pacifico', cursive;
-        font-size: 20px;
-        color: #f5e508;
-        padding-bottom: 20px; }
+        font-family: 'Abril Fatface', cursive;
+        padding-top: 200px;
+        grid-area: titulo; }
+        .cuerpo .informacion .encabezado-titulo h1 {
+          margin-bottom: 5px;
+          font-size: 40px;
+          color: #f5e508; }
+        .cuerpo .informacion .encabezado-titulo h3 {
+          text-align: center;
+          font-size: 30px;
+          color: #ff6961; }
+        .cuerpo .informacion .encabezado-titulo p {
+          font-family: 'Pacifico', cursive;
+          font-size: 20px;
+          color: #f5e508;
+          padding-bottom: 20px; }
+      .cuerpo .informacion .horarios, .cuerpo .informacion .pet-friendly {
+        grid-area: horarios;
+        margin-top: 100px; }
+      .cuerpo .informacion .pet-friendly {
+        grid-area: pet;
+        margin-top: 200px; }
   /* Footer */
   .instagram-web {
     padding-left: 50px; }
@@ -475,32 +518,90 @@ footer {
     height: 100px;
     position: relative; }
   /* inicio del encabezado del index*/
-  .encabezado-index {
+  .cuerpo {
     background-image: url(../public/mostrador.jpg);
     background-size: cover;
     background-position: center;
     height: 1000px; }
-    .encabezado-index .logo-nav img {
-      width: 100px;
-      height: 100px;
-      position: relative; }
-    .encabezado-index .encabezado-titulo {
-      text-align: center;
-      font-family: 'Abril Fatface', cursive;
-      padding-top: 190px; }
-      .encabezado-index .encabezado-titulo h1 {
-        margin-bottom: 5px;
-        font-size: 50px;
-        color: #f5e508; }
-      .encabezado-index .encabezado-titulo h3 {
+    .cuerpo .informacion {
+      display: grid;
+      grid-template-areas: "titulo horarios" "titulo pet"; }
+      .cuerpo .informacion .encabezado-titulo {
         text-align: center;
-        font-size: 40px;
-        color: #ff6961; }
-      .encabezado-index .encabezado-titulo p {
-        font-family: 'Pacifico', cursive;
-        font-size: 30px;
-        color: #f5e508;
-        padding-bottom: 20px; }
+        font-family: 'Abril Fatface', cursive;
+        margin-top: 200px;
+        margin-left: 100px; }
+        .cuerpo .informacion .encabezado-titulo h1 {
+          margin-bottom: 5px;
+          font-size: 50px;
+          color: #f5e508; }
+        .cuerpo .informacion .encabezado-titulo h3 {
+          text-align: center;
+          font-size: 40px;
+          color: #ff6961; }
+        .cuerpo .informacion .encabezado-titulo p {
+          font-family: 'Pacifico', cursive;
+          font-size: 30px;
+          color: #f5e508;
+          padding-bottom: 20px; }
+      .cuerpo .informacion .horarios, .cuerpo .informacion .pet-friendly {
+        grid-area: horarios;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #84b6f4;
+        width: 350px;
+        background-color: white;
+        text-align: center;
+        height: 400px;
+        margin-top: 200px; }
+        .cuerpo .informacion .horarios h2, .cuerpo .informacion .pet-friendly h2 {
+          border-style: solid;
+          border-width: 5px;
+          border-color: #84b6f4;
+          color: white;
+          font-size: 30px;
+          text-align: center;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          background-color: aqua;
+          font-family: 'Pacifico', cursive; }
+        .cuerpo .informacion .horarios p, .cuerpo .informacion .pet-friendly p {
+          font-size: 20px;
+          padding-top: 10px; }
+        .cuerpo .informacion .horarios ul, .cuerpo .informacion .pet-friendly ul {
+          list-style-type: none;
+          padding-top: 20px; }
+          .cuerpo .informacion .horarios ul li, .cuerpo .informacion .pet-friendly ul li {
+            font-size: 20px; }
+        .cuerpo .informacion .horarios .dias-lunes, .cuerpo .informacion .pet-friendly .dias-lunes {
+          font-size: 15px; }
+        .cuerpo .informacion .horarios .publicidad-ig, .cuerpo .informacion .pet-friendly .publicidad-ig {
+          background-color: #84b6f4;
+          height: 50px;
+          padding-top: 15px; }
+      .cuerpo .informacion .pet-friendly {
+        grid-area: pet;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #84b6f4;
+        width: 350px;
+        background-color: white;
+        text-align: center;
+        margin-top: 100px;
+        height: 130px;
+        font-family: 'Pacifico', cursive; }
+        .cuerpo .informacion .pet-friendly h2 {
+          border-style: solid;
+          border-width: 5px;
+          border-color: #84b6f4;
+          color: white;
+          font-size: 30px;
+          text-align: center;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          background-color: aqua;
+          font-family: 'Pacifico', cursive; }
+        .cuerpo .informacion .pet-friendly p {
+          font-size: 20px;
+          padding-top: 10px; }
   .cuerpo-horarios {
     border-style: solid;
     border-width: 10px;
@@ -702,52 +803,115 @@ footer {
 /* inicio de la configuracion media para 1900px */
 @media screen and (min-width: 1900px) {
   /* inicio del index.html */
-  .encabezado-index {
+  .encabezado-index .logo-nav img {
+    width: 100px;
+    height: 100px;
+    position: relative; }
+  .cuerpo {
     background-image: url(../public/mostrador.jpg);
     background-size: cover;
     height: 1400px; }
-    .encabezado-index .encabezado-titulo h1 {
-      padding-top: 100px;
-      margin-bottom: 5px;
-      margin-top: 100px;
-      font-size: 90px;
-      color: #f5e508; }
-    .encabezado-index .encabezado-titulo h3 {
-      padding-bottom: 5px;
-      padding-left: 900px;
-      padding-top: 5px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      font-size: 60px;
-      color: #ff6961; }
-    .encabezado-index .encabezado-titulo p {
-      font-family: 'Pacifico', cursive;
-      font-size: 50px;
-      color: #f5e508; }
-  .cuerpo-horarios {
-    border-style: solid;
-    border-width: 10px;
-    height: 920px;
-    background-image: url(../public/fondo-horarios.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
-    .cuerpo-horarios .cuerpo-horario-tabla {
-      font-size: 30px;
-      text-align: center;
-      margin: 0 auto;
-      border-style: dashed;
-      border-width: 10px;
-      width: 500px;
-      height: 900px;
-      background-color: #ecc30f;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .cuerpo-horarios .cuerpo-horario-tabla h2 {
-        font-size: 35px; }
-      .cuerpo-horarios .cuerpo-horario-tabla ul {
-        list-style-type: none; }
+    .cuerpo .informacion {
+      display: grid;
+      grid-template-areas: "titulo horarios" "titulo pet"; }
+      .cuerpo .informacion .encabezado-titulo {
+        grid-area: titulo;
+        font-family: 'Abril Fatface', cursive;
+        margin-top: 0;
+        margin-left: 100px;
+        width: 1500px; }
+        .cuerpo .informacion .encabezado-titulo h1 {
+          margin-bottom: 5px;
+          padding-top: 300px;
+          font-size: 100px;
+          color: #f5e508; }
+        .cuerpo .informacion .encabezado-titulo h3 {
+          padding-bottom: 5px;
+          padding-left: 0px;
+          margin-bottom: 5px;
+          font-size: 70px;
+          color: #ff6961; }
+        .cuerpo .informacion .encabezado-titulo p {
+          font-family: 'Pacifico', cursive;
+          font-size: 50px;
+          color: #f5e508;
+          padding-left: 70px; }
+      .cuerpo .informacion .horarios, .cuerpo .informacion .pet-friendly {
+        grid-area: horarios;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #84b6f4;
+        width: 400px;
+        background-color: white;
+        text-align: center;
+        height: 500px;
+        margin-top: 300px;
+        margin-right: 200px; }
+        .cuerpo .informacion .horarios h2, .cuerpo .informacion .pet-friendly h2 {
+          border-style: solid;
+          border-width: 5px;
+          border-color: #84b6f4;
+          color: white;
+          font-size: 40px;
+          text-align: center;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          background-color: aqua;
+          font-family: 'Pacifico', cursive; }
+        .cuerpo .informacion .horarios p, .cuerpo .informacion .pet-friendly p {
+          font-size: 30px;
+          padding-top: 10px; }
+        .cuerpo .informacion .horarios ul, .cuerpo .informacion .pet-friendly ul {
+          list-style-type: none;
+          padding-top: 20px; }
+          .cuerpo .informacion .horarios ul li, .cuerpo .informacion .pet-friendly ul li {
+            font-size: 30px; }
+        .cuerpo .informacion .horarios .dias-lunes, .cuerpo .informacion .pet-friendly .dias-lunes {
+          font-size: 20px; }
+        .cuerpo .informacion .horarios .publicidad-ig, .cuerpo .informacion .pet-friendly .publicidad-ig {
+          background-color: #84b6f4;
+          height: 70px;
+          padding-top: 15px;
+          font-size: 25px; }
+      .cuerpo .informacion .pet-friendly {
+        grid-area: pet;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #84b6f4;
+        width: 400px;
+        background-color: white;
+        text-align: center;
+        margin-right: 200px;
+        margin-top: 100px;
+        height: 150px;
+        font-family: 'Pacifico', cursive; }
+        .cuerpo .informacion .pet-friendly h2 {
+          border-style: solid;
+          border-width: 5px;
+          border-color: #84b6f4;
+          color: white;
+          font-size: 40px;
+          text-align: center;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          background-color: aqua;
+          font-family: 'Pacifico', cursive; }
+        .cuerpo .informacion .pet-friendly p {
+          font-size: 30px;
+          padding-top: 10px; }
+  /* estilo del footer */
+  footer {
+    background-color: #fffec2;
+    padding-top: 20px; }
+    footer .estilo-footer {
+      padding-bottom: 20px; }
+      footer .estilo-footer img {
+        width: 286px;
+        height: 250px; }
+      footer .estilo-footer .instagram-web {
+        padding-bottom: 10px; }
+    footer .derechos-reservados {
+      font-family: 'Abril Fatface', cursive;
+      color: #140202;
+      text-align: center; }
   /* inicio  seccion atencion al cliente */
   .contenido-atencion {
     background-image: url(../public/ejemplo-plato-3.jpg);

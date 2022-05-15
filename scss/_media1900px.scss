@@ -4,71 +4,176 @@
 
     /* inicio del index.html */
 
-.encabezado-index {
-    background-image:url(../public/mostrador.jpg);
-    background-size: cover;
-    height: 1400px;
-
-    .encabezado-titulo{
-        h1 {
-            padding-top: 100px;
-            margin-bottom: 5px;
-            margin-top: 100px;
-            font-size: 90px;
-            color: rgb(245, 229, 8);
+    .encabezado-index {
+        
+        .logo-nav img {
+            width: 100px;
+            height: 100px;
+            position: relative;
         }
         
-        h3 {
-            padding-bottom: 5px;
-            padding-left: 900px;
-            padding-top: 5px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            font-size: 60px;
-            color: $color-subtitle;
-        }
-        
-        p {
-            font-family: 'Pacifico', cursive;
-            font-size: 50px;
-            color: rgb(245, 229, 8);
-        }
     }
-}
 
-.cuerpo-horarios {
-    border-style:solid;
-    border-width: 10px;
-    height: 920px;
-    background-image: url(../public/fondo-horarios.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    .cuerpo {
+        background-image:url(../public/mostrador.jpg);
+        background-size: cover;
+        height: 1400px;
 
-    .cuerpo-horario-tabla {
-        font-size: 30px;
-        text-align: center;
-        margin:0 auto;
-        border-style: dashed;
-        border-width: 10px;
-        width: 500px;
-        height: 900px;
-        background-color: rgb(236, 195, 15);
+        .informacion {
+            display: grid;
+            grid-template-areas:
+            "titulo horarios"
+            "titulo pet"
+            ;
+
+            .encabezado-titulo{
+
+                grid-area: titulo;
+                font-family: 'Abril Fatface', cursive;
+                margin-top: 0;
+                margin-left: 100px;
+                width: 1500px;
+
+                h1 {
+                
+                    margin-bottom: 5px;
+                    padding-top: 300px;
+                    
+                    font-size: 100px;
+                    color: rgb(245, 229, 8);
+                }
+
+                h3 {
+                    padding-bottom: 5px;
+                    padding-left: 0px;
+                    margin-bottom: 5px;
+                    font-size: 70px;
+                    color: $color-subtitle;
+                }
+
+                p {
+                    font-family: 'Pacifico', cursive;
+                    font-size: 50px;
+                    color: rgb(245, 229, 8);
+                    padding-left: 70px;
+                }
     
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+            }
+            
+            .horarios {
+                grid-area:horarios;
 
-        h2 {
-            font-size: 35px;
-        }
-        
-        ul {
-            list-style-type: none;
+                border-style: solid;
+                border-width: 5px;
+                border-color: #84b6f4;
+                width: 400px;
+                background-color: rgb(255, 255, 255);
+                text-align: center;
+                height: 500px;
+                margin-top: 300px;
+                margin-right: 200px;
+                
+                h2 {
+                    border-style: solid;
+                    border-width: 5px;
+                    border-color: #84b6f4;
+                    color: rgb(255, 255, 255);
+                    font-size: 40px;
+                    text-align: center;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    background-color:aqua;
+                    font-family: 'Pacifico', cursive;
+                
+                }
+
+                p {
+                    font-size: 30px;
+                    padding-top: 10px;
+                }
+                
+                ul {
+                    list-style-type: none;
+                    padding-top: 20px;
+
+                    li {
+                        font-size: 30px;
+                    }
+                }
+
+                .dias-lunes {
+                    font-size: 20px;
+                }
+
+                .publicidad-ig {
+                    background-color: #84b6f4;
+                    height: 70px;
+                    padding-top: 15px;
+                    font-size: 25px;
+                }          
+            }
+
+            .pet-friendly {
+                grid-area: pet;
+
+                border-style: solid;
+                border-width: 5px;
+                border-color: #84b6f4;
+                width: 400px;
+                background-color: rgb(255, 255, 255);
+                text-align: center;
+                margin-right: 200px;
+                margin-top:100px;
+                height: 150px;
+
+                font-family: 'Pacifico', cursive;
+
+                h2 {
+                    border-style: solid;
+                    border-width: 5px;
+                    border-color: #84b6f4;
+                    color: rgb(255, 255, 255);
+                    font-size: 40px;
+                    text-align: center;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    background-color:aqua;
+                    font-family: 'Pacifico', cursive;
+                }
+
+                p {
+                    font-size: 30px;
+                    padding-top: 10px;
+                }
+
+
+            }
         }
     }
-}
 
+    /* estilo del footer */
+
+footer {
+    background-color:#fffec2 ;
+    padding-top: 20px;
+
+    .estilo-footer{
+        padding-bottom: 20px;
+
+        img {
+            width: 286px;
+            height: 250px;
+        }
+        
+        .instagram-web {
+            padding-bottom: 10px;
+        }
+    }
+
+    .derechos-reservados {
+        font-family: 'Abril Fatface', cursive;  
+        color: rgb(20, 2, 2);
+        text-align: center;
+    }
+}
 /* inicio  seccion atencion al cliente */
 
 .contenido-atencion {

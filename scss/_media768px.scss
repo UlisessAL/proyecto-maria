@@ -4,37 +4,56 @@
     
     
     /* inicio del encabezado del index*/
-    .encabezado-index {
+    .cuerpo {
         background-image: url(../public/mostrador.jpg);
         background-size: cover;
         background-position: center;
         height: 1000px;
 
-        .encabezado-titulo {
-            text-align: center;
-            font-family: 'Abril Fatface', cursive;
-        
-            padding-top: 200px;
-            margin-top: 120px;
+        .informacion {
+            display: grid;
+            grid-template-areas: 
+            "titulo titulo"
+            "horarios pet"
+            ;
 
-            h1 {
-                margin-bottom: 5px;
-                font-size: 40px;
-                color: rgb(245, 229, 8);
-            }
-            
-            h3 {
+            .encabezado-titulo {
                 text-align: center;
-                font-size: 30px;
-                color:$color-subtitle;
+                font-family: 'Abril Fatface', cursive;
+                padding-top: 200px;
+                grid-area: titulo;
+    
+                h1 {
+                    margin-bottom: 5px;
+                    font-size: 40px;
+                    color: rgb(245, 229, 8);
+                }
+                
+                h3 {
+                    text-align: center;
+                    font-size: 30px;
+                    color:$color-subtitle;
+                }
+                
+                p {
+                    font-family: 'Pacifico', cursive;
+                    font-size: 20px;
+                    color: rgb(245, 229, 8);
+                    padding-bottom: 20px;
+                }        
             }
-            
-            p {
-                font-family: 'Pacifico', cursive;
-                font-size: 20px;
-                color: rgb(245, 229, 8);
-                padding-bottom: 20px;
-            }        
+
+            .horarios{
+                grid-area: horarios;
+
+                margin-top: 100px;
+            }
+
+            .pet-friendly {
+                grid-area: pet;
+
+                margin-top: 200px;
+            }
         }
     }
 

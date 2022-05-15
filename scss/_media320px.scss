@@ -1,10 +1,6 @@
 /* inicio del encabezado del index*/
-.encabezado-index {
-    background-image: url(../public/limonada-frutos-rojos.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 800px;
 
+.encabezado-index {
     .logo-nav img {
 
         width: 50px;
@@ -12,17 +8,24 @@
         position: relative;
     
     }
-
+    
     .nav-link {
         font-size: 20px;
     }
+    
+}
+
+.cuerpo {
+    background-image: url(../public/limonada-frutos-rojos.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
 
     .encabezado-titulo {
         text-align: center;
         font-family: 'Abril Fatface', cursive;
     
         padding-top: 100px;
-        margin-top: 150px;
         
         h1 {
             margin-bottom: 5px;
@@ -44,6 +47,98 @@
         }
         
     }
+
+    // maps
+
+    $dias-horarios: (
+        martes: rgb(249, 186, 186),
+        domingo:rgb(252, 135, 135),
+        lunes:rgb(138, 137, 137),
+    );
+
+    @each $dias, $color in $dias-horarios {
+        .dias-#{$dias}{
+            color:$color;
+        }
+        
+    }
+
+    .horarios {
+        border-style: solid;
+        border-width: 5px;
+        border-color: #84b6f4;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        width: 200px;
+        height: 320px;
+        margin: auto;
+
+        h2 {
+            border-style: solid;
+            border-width: 5px;
+            border-color: #84b6f4;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color:aqua;
+            font-family: 'Pacifico', cursive;
+        
+        }
+
+        p {
+            font-size: 15px;
+            padding-top: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-top: 20px;
+
+            li {
+                font-size: 15px;
+            }
+        }
+
+        .dias-lunes {
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+
+        .publicidad-ig {
+            background-color: #84b6f4;
+            height: 20px;
+        
+            font-size: 15px;
+        }   
+
+    }
+
+    .pet-friendly {
+                @extend .horarios;
+
+                margin-top:50px;
+                height: 100px;
+
+                font-family: 'Pacifico', cursive;
+
+                h2 {
+                    border-style: solid;
+                    border-width: 5px;
+                    border-color: #84b6f4;
+                    color: rgb(255, 255, 255);
+                    font-size: 20px;
+                    text-align: center;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    background-color:aqua;
+                    font-family: 'Pacifico', cursive;
+                }
+
+                p {
+                    font-size: 15px;
+                    padding-top: 10px;
+                }
+    }
 }
 
 // Encabezado otros html
@@ -60,41 +155,6 @@
         font-size: 20px;
     }
 
-}
-
-
-
-/* comienzo del body del index.html */
-
-.cuerpo-horarios {
-    border-style:solid;
-    border-width: 10px;
-    background-image: url(../public/fondo-horarios.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    .cuerpo-horario-tabla {
-        font-size: 20px;
-        text-align: center;
-        margin: auto;
-        border-style: dashed;
-        border-width: 10px;
-        width: 200px;
-        background-color: rgb(236, 195, 15);
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        ul {
-            list-style-type: none;
-
-            li {
-                padding-right: 25px;
-            }
-        }
-    }
 }
 
 /* estilo del footer */
@@ -122,6 +182,7 @@ footer {
         text-align: center;
     }
 }
+
 
 /* inicio estilo atencion al cliente */
 
