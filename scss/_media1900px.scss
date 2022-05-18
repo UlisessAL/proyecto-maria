@@ -5,21 +5,28 @@
     /* inicio del index.html */
 
     .encabezado-index {
-        
-        .logo-nav img {
-            width: 100px;
-            height: 100px;
-            position: relative;
+
+        .navbar {
+            background-color: #84b6f4;
+
+            .logo-nav img {
+                width: 100px;
+                height: 100px;
+                position: relative;
+            }
         }
+        
+        
         
     }
 
     .cuerpo {
-        background-image:url(../public/mostrador.jpg);
-        background-size: cover;
-        height: 1400px;
+        
 
         .informacion {
+            background-image:url(../public/mostrador.jpg);
+            background-size: cover;
+            height: 1400px;
             display: grid;
             grid-template-areas:
             "titulo horarios"
@@ -122,7 +129,7 @@
                 background-color: rgb(255, 255, 255);
                 text-align: center;
                 margin-right: 200px;
-                margin-top:100px;
+                margin-top:50px;
                 height: 150px;
 
                 font-family: 'Pacifico', cursive;
@@ -147,31 +154,61 @@
 
             }
         }
+
+        .redes-sociales {
+            height: 2000px;
+            background-color:#84b6f4 ;
+            display: flex;
+            flex-direction: column;
+            
+
+            h2{
+                text-align: center;
+                background-color: rgb(251, 251, 251);
+                padding: 20px;
+            }
+
+            .red {
+                
+                h3 {
+                    text-align: center;
+                    background-color: rgb(251, 251, 251);
+                    margin: auto;
+                    width: 500px;
+                    padding: 20px;
+                    margin-top: 15px;
+                }
+
+                p {
+                    text-align: center;
+                    color: #fdcae1;
+                    padding-top: 30px;
+                    font-size: 30px;
+                    
+                }
+
+                img {
+                    padding-bottom: 40px;
+                }
+
+                a {
+                    width: 300px;
+                    margin: auto;
+                }
+            }
+        }
     }
 
     /* estilo del footer */
 
-footer {
+.footer {
     background-color:#fffec2 ;
-    padding-top: 20px;
-
-    .estilo-footer{
-        padding-bottom: 20px;
-
-        img {
-            width: 286px;
-            height: 250px;
-        }
-        
-        .instagram-web {
-            padding-bottom: 10px;
-        }
-    }
 
     .derechos-reservados {
         font-family: 'Abril Fatface', cursive;  
         color: rgb(20, 2, 2);
         text-align: center;
+        font-size: 10px;
     }
 }
 /* inicio  seccion atencion al cliente */
@@ -208,6 +245,11 @@ footer {
                 font-size: 40px;
                 font-weight: bold;
                 background-color: aliceblue;
+            }
+
+            p {
+                margin-top: 60px;
+                font-size: 30px;
             }
         }
 
@@ -274,6 +316,7 @@ footer {
     background-color: #f8db68;
     
     .producto-estrella  {
+        
         list-style-type: none;
         padding: 15px;
         display:flex ;
@@ -288,14 +331,13 @@ footer {
             h2 {
                 font-size: 50px;
                 font-family: 'Abril Fatface', cursive;  
-                color: aliceblue;
+                color: $color-rosa;
             }
             
             h3 {
                 font-size: 40px;
                 font-family: 'Pacifico', cursive;
-                background-color: aliceblue;
-                color:#ffcc00;
+                background-color: $color-rosa;
                 text-align: center;
             }
             
@@ -327,7 +369,7 @@ footer {
             font-size: 40px;
             font-family: 'Abril Fatface', cursive;  
             color: #84b6f4;
-            background-color: #fdcae1;
+            background-color: $color-rosa;
         }
     }
 
@@ -351,7 +393,7 @@ footer {
 
             h2 {
                 font-family: 'Pacifico', cursive;
-                background-color:#fdcae1 ; 
+                background-color:$color-rosa ; 
                 font-size: 30px;
                 height: 60px;
                 line-height: 60px;
@@ -381,7 +423,7 @@ footer {
             font-size: 40px;
             font-family: 'Abril Fatface', cursive;  
             color: #84b6f4;
-            background-color: #fdcae1;
+            background-color: $color-rosa;
         }
     }
 
@@ -405,7 +447,7 @@ footer {
 
             h2 {
                 font-family: 'Pacifico', cursive;
-                background-color:#fdcae1 ; 
+                background-color:$color-rosa ; 
                 font-size: 30px;
                 height: 60px;
                 line-height: 60px;

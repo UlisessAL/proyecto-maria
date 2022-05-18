@@ -5,12 +5,15 @@
     
     /* inicio del encabezado del index*/
     .cuerpo {
-        background-image: url(../public/mostrador.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 1000px;
+        
 
         .informacion {
+
+            background-image: url(../public/mostrador.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 1000px;
+
             display: grid;
             grid-template-areas: 
             "titulo titulo"
@@ -55,11 +58,53 @@
                 margin-top: 200px;
             }
         }
-    }
 
-    /* Footer */
-    .instagram-web {
-        padding-left: 50px;
+        .redes-sociales {
+            height: 1750px;
+            background-color:#84b6f4 ;
+            display: flex;
+            flex-direction: column;
+            
+    
+            h2{
+                text-align: center;
+                background-color: rgb(251, 251, 251);
+                padding: 20px;
+            }
+    
+            .red {
+                
+                h3 {
+                    text-align: center;
+                    background-color: rgb(251, 251, 251);
+                    margin: auto;
+                    width: 200px;
+                    padding: 20px;
+                    margin-top: 15px;
+                }
+    
+                p {
+                    text-align: center;
+                    color: #fdcae1;
+                    padding-top: 30px;
+                    font-size: 20px;
+                    
+                }
+    
+                img {
+                    height: 600px;
+                    width: 500px;
+                }
+    
+                
+                a {
+                    width: 200px;
+                    margin: auto;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
     }
     
     /* inicio  seccion atencion al cliente */
@@ -175,15 +220,14 @@
                 h2 {
                     font-size: 25px;
                     font-family: 'Abril Fatface', cursive;  
-                    color: aliceblue;
+                    color: $color-rosa;
                     text-align: center;
                 }
                 
                 h3 {
                     font-size: 20px;
                     font-family: 'Pacifico', cursive;
-                    background-color: aliceblue;
-                    color:#ffcc00;
+                    background-color: $color-rosa;
                     text-align: center;
                 }
                 
@@ -213,7 +257,7 @@
                 font-size: 20px;
                 font-family: 'Abril Fatface', cursive;  
                 color: #84b6f4;
-                background-color: #fdcae1;
+                background-color: $color-rosa;
             }
         }
 
@@ -237,14 +281,13 @@
 
                 .otros-productos h2 {
                     font-family: 'Pacifico', cursive;
-                    background-color:#fdcae1 ; 
+                    background-color:$color-rosa ; 
                     font-size: 10px;
                 }
 
                 .otros-productos img {
                     width: 200px;
                     height: 200px;
-                
                     align-self: center;
                 }
                 
@@ -265,7 +308,7 @@
                 font-size: 20px;
                 font-family: 'Abril Fatface', cursive;  
                 color: #84b6f4;
-                background-color: #fdcae1;
+                background-color: $color-rosa;
             }
         }
 
@@ -289,7 +332,7 @@
 
                 h2 {
                     font-family: 'Pacifico', cursive;
-                    background-color:#fdcae1 ; 
+                    background-color:$color-rosa ; 
                     font-size: 10px;
                 }
 
