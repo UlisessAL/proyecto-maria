@@ -1,12 +1,37 @@
 /* inicio configuracion media para 1280px */
 
 @media screen and (min-width:1280px) {
-    /* nav */
+    /* nav del index */
+    .encabezado-index {
+        .navbar{
+            .logo-nav img {
+                width: 70px;
+                height: 70px;
+                position: relative;
+            }
+        }
+        
+    }
+
+// nav de ubicacion y atencion al cliente
     .encabezado {
-        .logo-nav img {
-            width: 100px;
-            height: 100px;
-            position: relative;
+        .navbar{
+            .logo-nav img {
+                width: 70px;
+                height: 70px;
+                position: relative;
+            }
+        }
+    }
+
+    // nav productos
+    .encabezado-productos {
+        .navbar{
+            .logo-nav img {
+                width: 70px;
+                height: 70px;
+                position: relative;
+            }
         }
     }
 
@@ -225,7 +250,7 @@
 /* inicio  seccion atencion al cliente */
 
 .contenido-atencion {
-    background-image: url(../public/ejemplo-plato-3.jpg);
+    background-image: url(../public/fondo-atencion-clientes.jpg);
     background-size: contain;
     background-repeat:round;
 
@@ -237,6 +262,7 @@
 
         .titulo-sugerencia {
             padding-left: 35px;
+            padding-right: 35px;
             margin-top: 0px;
             margin-bottom: 25px;
             font-family: 'Abril Fatface', cursive; 
@@ -250,10 +276,19 @@
             color: rgb(10, 10, 10);
 
             h1{
-                color: #ffcc00;
+                
                 font-size: 35px;
                 font-weight: bold;
-                background-color: aliceblue;
+                
+            }
+        }
+
+        .foto-fondo {
+            p {
+                display: block;
+                font-size: 10px;
+                text-align: center;
+                margin-top: 50px;
             }
         }
     }
@@ -323,15 +358,19 @@
 /* inicio seccion productos */
 
 .producto {
-    background-color: #f8db68;
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Ccircle fill='%23FDCAE1' cx='45' cy='45' r='10'/%3E%3Cg fill='%23FDCAE1' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='10'/%3E%3Ccircle cx='90' cy='90' r='10'/%3E%3Ccircle cx='90' cy='0' r='10'/%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
 
     .producto-estrella  {
+        width: 1000px;
         list-style-type: none;
         padding: 15px;
         display:flex ;
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        margin: auto;
 
         .producto-estrella-parrafo {
             display: flex;
@@ -349,6 +388,7 @@
                 font-family: 'Pacifico', cursive;
                 background-color: $color-rosa;
                 text-align: center;
+                color: #fffec2;
             }
             
             p {
