@@ -1,0 +1,14 @@
+$color-subtitle:#ff6961;
+$background-sugerencia:#ffe4ec;
+$color-rosa:#fdcae1;
+
+// operaciones
+
+$size:40px;
+
+// mixin
+
+@mixin tamaño-dimensiones ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}

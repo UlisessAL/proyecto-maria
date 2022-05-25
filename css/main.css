@@ -2,8 +2,8 @@
 .encabezado-index .navbar, .encabezado-productos .navbar, .encabezado .navbar {
   background-color: #fdcae1; }
   .encabezado-index .navbar .logo-nav img, .encabezado-productos .navbar .logo-nav img, .encabezado .navbar .logo-nav img {
-    width: 50px;
     height: 50px;
+    width: 50px;
     position: relative; }
   .encabezado-index .navbar .nav-link, .encabezado-productos .navbar .nav-link, .encabezado .navbar .nav-link {
     font-size: 20px;
@@ -11,7 +11,7 @@
     font-family: 'Vesper Libre', serif; }
 
 .cuerpo .informacion {
-  background-image: url(../public/cupcake-index.jpg);
+  background-image: url("../public/cupcake-index.jpg");
   background-size: cover;
   background-position: center;
   height: 800px; }
@@ -44,8 +44,8 @@
     border-color: #84b6f4;
     background-color: white;
     text-align: center;
-    width: 200px;
     height: 320px;
+    width: 200px;
     margin: auto; }
     .cuerpo .informacion .horarios h2, .cuerpo .informacion .pet-friendly h2 {
       border-style: solid;
@@ -66,7 +66,7 @@
       .cuerpo .informacion .horarios ul li, .cuerpo .informacion .pet-friendly ul li {
         font-size: 15px; }
     .cuerpo .informacion .horarios .dias-lunes, .cuerpo .informacion .pet-friendly .dias-lunes {
-      font-size: 10px;
+      font-size: size-30;
       margin-bottom: 10px; }
     .cuerpo .informacion .horarios .publicidad-ig, .cuerpo .informacion .pet-friendly .publicidad-ig {
       background-color: #84b6f4;
@@ -90,7 +90,7 @@
       font-size: 15px;
       padding-top: 10px; }
   .cuerpo .informacion .atribucion-foto-index {
-    font-size: 10px;
+    font-size: size-30;
     color: #8a8989;
     text-align: end;
     margin-right: 70px;
@@ -130,8 +130,8 @@
     margin-bottom: 10px; }
 
 .encabezado .logo-nav img {
-  width: 50px;
   height: 50px;
+  width: 50px;
   position: relative; }
 
 .encabezado .nav-link {
@@ -159,11 +159,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
+    font-size: size-30;
     color: #0a0a0a;
     text-align: center; }
     .sugerencia .titulo-sugerencia h1 {
-      font-size: 20px;
+      font-size: size-20;
       font-weight: 200; }
     .sugerencia .titulo-sugerencia p {
       margin-top: 10px;
@@ -202,8 +202,8 @@
 .encabezado-productos .navbar {
   background-color: #fdcae1; }
   .encabezado-productos .navbar .logo-nav img {
-    width: 50px;
     height: 50px;
+    width: 50px;
     position: relative; }
   .encabezado-productos .navbar .nav-link {
     font-size: 20px; }
@@ -252,8 +252,8 @@
         font-size: 10px;
         font-family: 'Pacifico', cursive; }
     .producto .producto-estrella img {
-      width: 250px;
       height: 200px;
+      width: 250px;
       margin: 20px 20px; }
   .producto .contenedor-titulo-otros-productos {
     height: 100px;
@@ -277,9 +277,9 @@
     .producto .otros .otros-productos {
       background-color: aliceblue;
       margin: 30px;
-      width: 250px;
       text-align: center;
       height: 250px;
+      width: 250px;
       display: flex;
       flex-direction: column;
       /* Transiciones */
@@ -296,8 +296,8 @@
         line-height: 20px;
         margin-top: 10px; }
       .producto .otros .otros-productos img {
-        width: 200px;
         height: 200px;
+        width: 200px;
         align-self: center; }
   .producto .contenedor-titulo-bebidas {
     height: 40px;
@@ -322,9 +322,9 @@
     .producto .bebidas .bebidas-productos {
       background-color: aliceblue;
       margin: 30px;
-      width: 250px;
       text-align: center;
       height: 250px;
+      width: 250px;
       display: flex;
       flex-direction: column;
       /* Transiciones */
@@ -341,12 +341,12 @@
         line-height: 20px;
         margin-top: 10px; }
       .producto .bebidas .bebidas-productos img {
-        width: 200px;
         height: 200px;
+        width: 200px;
         align-self: center; }
 
 .el-titulo-pedidos {
-  background-image: url(../public/fondo-pedidos.jpg);
+  background-image: url("../public/fondo-pedidos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: inherit;
@@ -406,7 +406,7 @@
 @media screen and (min-width: 768px) {
   /* inicio del encabezado del index*/
   .cuerpo .informacion {
-    background-image: url(../public/mostrador.jpg);
+    background-image: url("../public/mostrador.jpg");
     background-size: cover;
     background-position: center;
     height: 1000px;
@@ -474,8 +474,8 @@
     background-color: #ffe4ec; }
     .contenido-atencion .sugerencia {
       background-color: #ffe4ec;
-      width: 700px;
       height: 750px;
+      width: 700px;
       margin: auto; }
       .contenido-atencion .sugerencia .titulo-sugerencia {
         padding-left: 35px;
@@ -493,15 +493,15 @@
           font-weight: bold; }
   /* inicio seccion ubicacion */
   .contenido-ubicacion {
-    background-image: url(../public/atencion-cliente-fondo.jpg);
+    background-image: url("../public/atencion-cliente-fondo.jpg");
     background-size: contain;
     display: grid;
     grid-template-areas: "titulo " "subtitulo " "calle " "mapa "; }
     .contenido-ubicacion .ubicacion {
       text-align: center;
       background-color: blanchedalmond;
-      width: 500px;
       height: 600px;
+      width: 500px;
       margin: auto; }
       .contenido-ubicacion .ubicacion .ubicacion-titulo {
         grid-area: titulo;
@@ -558,8 +558,8 @@
           font-size: 15px;
           font-family: 'Pacifico', cursive; }
       .producto .producto-estrella img {
-        width: 300px;
         height: 300px;
+        width: 300px;
         margin: 20px 20px; }
     .producto .contenedor-titulo-otros-productos {
       height: 100px;
@@ -583,9 +583,9 @@
       .producto .otros .otros-productos {
         background-color: aliceblue;
         margin: 30px;
-        width: 250px;
         text-align: center;
         height: 250px;
+        width: 250px;
         display: flex;
         flex-direction: column; }
         .producto .otros .otros-productos .otros-productos h2 {
@@ -593,8 +593,8 @@
           background-color: #fdcae1;
           font-size: 10px; }
         .producto .otros .otros-productos .otros-productos img {
-          width: 200px;
           height: 200px;
+          width: 200px;
           align-self: center; }
     .producto .contenedor-titulo-bebidas {
       height: 40px;
@@ -619,9 +619,9 @@
       .producto .bebidas .bebidas-productos {
         background-color: aliceblue;
         margin: 30px;
-        width: 250px;
         text-align: center;
         height: 250px;
+        width: 250px;
         display: flex;
         flex-direction: column; }
         .producto .bebidas .bebidas-productos h2 {
@@ -629,11 +629,11 @@
           background-color: #fdcae1;
           font-size: 10px; }
         .producto .bebidas .bebidas-productos img {
-          width: 200px;
           height: 200px;
+          width: 200px;
           align-self: center; }
   .el-titulo-pedidos {
-    background-image: url(../public/fondo-pedidos.jpg);
+    background-image: url("../public/fondo-pedidos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: inherit;
@@ -697,7 +697,7 @@
 @media screen and (min-width: 1024px) {
   /* Ubicacion */
   .contenido-ubicacion {
-    background-image: url(../public/atencion-cliente-fondo.jpg);
+    background-image: url("../public/atencion-cliente-fondo.jpg");
     background-size: contain;
     background-repeat: space; } }
 
@@ -705,20 +705,20 @@
 @media screen and (min-width: 1280px) {
   /* nav del index */
   .encabezado-index .navbar .logo-nav img, .encabezado-productos .navbar .logo-nav img, .encabezado .navbar .logo-nav img {
-    width: 70px;
     height: 70px;
+    width: 70px;
     position: relative; }
   .encabezado .navbar .logo-nav img {
-    width: 70px;
     height: 70px;
+    width: 70px;
     position: relative; }
   .encabezado-productos .navbar .logo-nav img {
-    width: 70px;
     height: 70px;
+    width: 70px;
     position: relative; }
   /* inicio del encabezado del index*/
   .cuerpo .informacion {
-    background-image: url(../public/mostrador.jpg);
+    background-image: url("../public/mostrador.jpg");
     background-size: cover;
     background-position: center;
     height: 1000px;
@@ -747,10 +747,10 @@
       border-style: solid;
       border-width: 5px;
       border-color: #84b6f4;
-      width: 350px;
       background-color: white;
       text-align: center;
       height: 400px;
+      width: 350px;
       margin-top: 200px; }
       .cuerpo .informacion .horarios h2, .cuerpo .informacion .pet-friendly h2 {
         border-style: solid;
@@ -781,11 +781,11 @@
       border-style: solid;
       border-width: 5px;
       border-color: #84b6f4;
-      width: 350px;
       background-color: white;
       text-align: center;
-      margin-top: 100px;
       height: 130px;
+      width: 350px;
+      margin-top: 100px;
       font-family: 'Pacifico', cursive; }
       .cuerpo .informacion .pet-friendly h2 {
         border-style: solid;
@@ -801,7 +801,7 @@
         font-size: 20px;
         padding-top: 10px; }
   .cuerpo .redes-sociales {
-    height: 2000px;
+    height: 1300px;
     background-color: #FFA0D4;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
@@ -811,31 +811,37 @@
       text-align: center;
       background-color: #fbfbfb;
       padding: 20px; }
-    .cuerpo .redes-sociales .red h3 {
-      text-align: center;
-      background-color: #fbfbfb;
-      margin: auto;
-      width: 400px;
-      padding: 20px;
-      margin-top: 15px; }
-    .cuerpo .redes-sociales .red p {
-      text-align: center;
-      color: #c33b80;
-      padding-top: 30px;
-      font-size: 25px; }
-    .cuerpo .redes-sociales .red img {
-      height: 700px;
-      width: 600px; }
-    .cuerpo .redes-sociales .red a {
-      width: 300px;
-      margin: auto;
-      margin-top: 10px;
-      margin-bottom: 10px; }
+    .cuerpo .redes-sociales .pre-red {
+      padding-top: 100px;
+      display: grid;
+      grid-template-columns: auto auto; }
+      .cuerpo .redes-sociales .pre-red .red h3 {
+        text-align: center;
+        background-color: #fbfbfb;
+        margin: auto;
+        width: 400px;
+        padding: 20px;
+        margin-top: 15px; }
+      .cuerpo .redes-sociales .pre-red .red p {
+        text-align: center;
+        color: #c33b80;
+        padding-top: 30px;
+        font-size: 25px;
+        width: 500px;
+        margin-left: 100px; }
+      .cuerpo .redes-sociales .pre-red .red img {
+        height: 600px;
+        width: 500px; }
+      .cuerpo .redes-sociales .pre-red .red a {
+        width: 300px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px; }
   .cuerpo-horarios {
     border-style: solid;
     border-width: 10px;
     height: 800px;
-    background-image: url(../public/fondo-horarios.jpg);
+    background-image: url("../public/fondo-horarios.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
@@ -845,8 +851,8 @@
       margin: 0 auto;
       border-style: dashed;
       border-width: 10px;
-      width: 380px;
       height: 780px;
+      width: 380px;
       background-color: #ecc30f;
       display: flex;
       flex-direction: column;
@@ -858,13 +864,13 @@
         list-style-type: none; }
   /* inicio  seccion atencion al cliente */
   .contenido-atencion {
-    background-image: url(../public/fondo-atencion-clientes.jpg);
+    background-image: url("../public/fondo-atencion-clientes.jpg");
     background-size: contain;
     background-repeat: round; }
     .contenido-atencion .sugerencia {
       background-color: #ffe4ec;
-      width: 700px;
       height: 700px;
+      width: 700px;
       margin: auto; }
       .contenido-atencion .sugerencia .titulo-sugerencia {
         padding-left: 35px;
@@ -888,7 +894,7 @@
         margin-top: 50px; }
   /* inicio seccion ubicacion */
   .contenido-ubicacion {
-    background-image: url(../public/atencion-cliente-fondo.jpg);
+    background-image: url("../public/atencion-cliente-fondo.jpg");
     background-size: contain;
     background-repeat: space;
     display: grid;
@@ -898,6 +904,8 @@
       background-color: blanchedalmond;
       width: 650px;
       height: 600px;
+      height: 600px;
+      width: 650px;
       margin: auto; }
       .contenido-ubicacion .ubicacion .ubicacion-titulo {
         grid-area: titulo;
@@ -955,8 +963,8 @@
           font-size: 20px;
           font-family: 'Pacifico', cursive; }
       .producto .producto-estrella img {
-        width: 400px;
         height: 400px;
+        width: 400px;
         margin: 20px 20px; }
     .producto .contenedor-titulo-otros-productos {
       height: 100px;
@@ -992,8 +1000,8 @@
           height: 30px;
           line-height: 30px; }
         .producto .otros .otros-productos img {
-          width: 250px;
           height: 250px;
+          width: 250px;
           align-self: center; }
     .producto .contenedor-titulo-bebidas {
       height: 40px;
@@ -1018,9 +1026,9 @@
       .producto .bebidas .bebidas-productos {
         background-color: aliceblue;
         margin: 30px;
-        width: 300px;
         text-align: center;
         height: 330px;
+        width: 300px;
         display: flex;
         flex-direction: column; }
         .producto .bebidas .bebidas-productos h2 {
@@ -1030,11 +1038,11 @@
           height: 30px;
           line-height: 30px; }
         .producto .bebidas .bebidas-productos img {
-          width: 250px;
           height: 250px;
+          width: 250px;
           align-self: center; }
   .el-titulo-pedidos {
-    background-image: url(../public/fondo-pedidos.jpg);
+    background-image: url("../public/fondo-pedidos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: inherit;
@@ -1102,11 +1110,11 @@
   .encabezado-index .navbar, .encabezado-productos .navbar, .encabezado .navbar {
     background-color: #fdcae1; }
     .encabezado-index .navbar .logo-nav img, .encabezado-productos .navbar .logo-nav img, .encabezado .navbar .logo-nav img {
-      width: 70px;
       height: 70px;
+      width: 70px;
       position: relative; }
   .cuerpo .informacion {
-    background-image: url(../public/mostrador.jpg);
+    background-image: url("../public/mostrador.jpg");
     background-size: cover;
     height: 1400px;
     display: grid;
@@ -1138,10 +1146,10 @@
       border-style: solid;
       border-width: 5px;
       border-color: #84b6f4;
-      width: 400px;
       background-color: white;
       text-align: center;
       height: 500px;
+      width: 400px;
       margin-top: 300px;
       margin-right: 200px; }
       .cuerpo .informacion .horarios h2, .cuerpo .informacion .pet-friendly h2 {
@@ -1174,12 +1182,12 @@
       border-style: solid;
       border-width: 5px;
       border-color: #84b6f4;
-      width: 400px;
       background-color: white;
       text-align: center;
       margin-right: 200px;
       margin-top: 50px;
       height: 150px;
+      width: 400px;
       font-family: 'Pacifico', cursive; }
       .cuerpo .informacion .pet-friendly h2 {
         border-style: solid;
@@ -1195,7 +1203,7 @@
         font-size: 30px;
         padding-top: 10px; }
   .cuerpo .redes-sociales {
-    height: 2000px;
+    height: 1300px;
     background-color: #FFA0D4;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
     display: flex;
@@ -1204,23 +1212,30 @@
       text-align: center;
       background-color: #fbfbfb;
       padding: 20px; }
-    .cuerpo .redes-sociales .red h3 {
-      text-align: center;
-      background-color: #fbfbfb;
-      margin: auto;
-      width: 500px;
-      padding: 20px;
-      margin-top: 15px; }
-    .cuerpo .redes-sociales .red p {
-      text-align: center;
-      color: #c33b80;
-      padding-top: 30px;
-      font-size: 30px; }
-    .cuerpo .redes-sociales .red img {
-      padding-bottom: 40px; }
-    .cuerpo .redes-sociales .red a {
-      width: 300px;
-      margin: auto; }
+    .cuerpo .redes-sociales .pre-red {
+      display: grid;
+      grid-template-columns: auto auto; }
+      .cuerpo .redes-sociales .pre-red .red h3 {
+        text-align: center;
+        background-color: #fbfbfb;
+        margin: auto;
+        width: 500px;
+        padding: 20px;
+        margin-top: 15px; }
+      .cuerpo .redes-sociales .pre-red .red p {
+        text-align: center;
+        color: #c33b80;
+        padding-top: 30px;
+        font-size: 30px;
+        width: 600px;
+        margin-left: 320px; }
+      .cuerpo .redes-sociales .pre-red .red img {
+        height: 700px;
+        width: 600px;
+        padding-bottom: 40px; }
+      .cuerpo .redes-sociales .pre-red .red a {
+        width: 300px;
+        margin: auto; }
   /* estilo del footer */
   .footer {
     background-color: #fffec2; }
@@ -1231,13 +1246,13 @@
       font-size: 10px; }
   /* inicio  seccion atencion al cliente */
   .contenido-atencion {
-    background-image: url(../public/fondo-atencion-clientes.jpg);
+    background-image: url("../public/fondo-atencion-clientes.jpg");
     background-repeat: space;
     background-size: contain; }
     .contenido-atencion .sugerencia {
       background-color: #ffe4ec;
-      width: 1090px;
       height: 1000px;
+      width: 1090px;
       margin: auto; }
       .contenido-atencion .sugerencia .titulo-sugerencia {
         padding-left: 35px;
@@ -1267,16 +1282,16 @@
         margin-top: 100px; }
   /* inicio seccion ubicacion */
   .contenido-ubicacion {
-    background-image: url(../public/atencion-cliente-fondo.jpg);
+    background-image: url("../public/atencion-cliente-fondo.jpg");
     background-repeat: space;
     background-size: contain;
     display: flex; }
     .contenido-ubicacion .ubicacion {
       text-align: center;
       background-color: blanchedalmond;
-      width: 1500px;
       margin: auto;
-      height: 1000px; }
+      height: 1000px;
+      width: 1500px; }
       .contenido-ubicacion .ubicacion .ubicacion-titulo {
         padding-top: 50px;
         font-size: 50px;
@@ -1332,8 +1347,8 @@
           font-size: 30px;
           font-family: 'Pacifico', cursive; }
       .producto .producto-estrella img {
-        width: 650px;
         height: 650px;
+        width: 650px;
         margin: 50px 50px; }
     .producto .contenedor-titulo-otros-productos {
       height: 200px;
@@ -1357,9 +1372,9 @@
       .producto .otros .otros-productos {
         background-color: aliceblue;
         margin: 30px;
-        width: 600px;
         text-align: center;
         height: 550px;
+        width: 600px;
         display: flex;
         flex-direction: column; }
         .producto .otros .otros-productos h2 {
@@ -1371,8 +1386,8 @@
           margin-bottom: 30px;
           margin-top: 20px; }
         .producto .otros .otros-productos img {
-          width: 500px;
           height: 400px;
+          width: 500px;
           align-self: center; }
     .producto .contenedor-titulo-bebidas {
       height: 200px;
@@ -1396,9 +1411,9 @@
       .producto .bebidas .bebidas-productos {
         background-color: aliceblue;
         margin: 30px;
-        width: 600px;
         text-align: center;
         height: 550px;
+        width: 600px;
         display: flex;
         flex-direction: column; }
         .producto .bebidas .bebidas-productos h2 {
@@ -1410,11 +1425,11 @@
           margin-bottom: 30px;
           margin-top: 20px; }
         .producto .bebidas .bebidas-productos img {
-          width: 500px;
           height: 400px;
+          width: 500px;
           align-self: center; }
   .el-titulo-pedidos {
-    background-image: url(../public/fondo-pedidos.jpg);
+    background-image: url("../public/fondo-pedidos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: inherit;

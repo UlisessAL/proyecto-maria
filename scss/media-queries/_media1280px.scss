@@ -5,8 +5,7 @@
     .encabezado-index {
         .navbar{
             .logo-nav img {
-                width: 70px;
-                height: 70px;
+                @include tamaño-dimensiones(70px,70px);
                 position: relative;
             }
         }
@@ -16,8 +15,7 @@
     .encabezado {
         .navbar{
             .logo-nav img {
-                width: 70px;
-                height: 70px;
+                @include tamaño-dimensiones(70px,70px);
                 position: relative;
             }
         }
@@ -27,8 +25,7 @@
     .encabezado-productos {
         .navbar{
             .logo-nav img {
-                width: 70px;
-                height: 70px;
+                @include tamaño-dimensiones(70px,70px);
                 position: relative;
             }
         }
@@ -38,7 +35,7 @@
 .cuerpo {
 
     .informacion {
-        background-image: url(../public/mostrador.jpg);
+        background-image: url("../public/mostrador.jpg");
         background-size: cover;
         background-position: center;
         height: 1000px;
@@ -58,7 +55,7 @@
     
             h1 {
                 margin-bottom: 5px;
-                font-size: 50px;
+                font-size: $size+10;
                 color: rgb(245, 229, 8);
             }
             
@@ -70,7 +67,7 @@
             
             p {
                 font-family: 'Pacifico', cursive;
-                font-size: 30px;
+                font-size: $size - 10;
                 color: rgb(245, 229, 8);
                 padding-bottom: 20px;
             }
@@ -82,10 +79,9 @@
             border-style: solid;
             border-width: 5px;
             border-color: #84b6f4;
-            width: 350px;
             background-color: rgb(255, 255, 255);
             text-align: center;
-            height: 400px;
+            @include tamaño-dimensiones(400px,350px);
             margin-top: 200px;
             
             h2 {
@@ -93,7 +89,7 @@
                 border-width: 5px;
                 border-color: #84b6f4;
                 color: rgb(255, 255, 255);
-                font-size: 30px;
+                font-size: $size - 10;
                 text-align: center;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 background-color:aqua;
@@ -102,7 +98,7 @@
             }
     
             p {
-                font-size: 20px;
+                font-size: $size - 20;
                 padding-top: 10px;
             }
             
@@ -111,7 +107,7 @@
                 padding-top: 20px;
     
                 li {
-                    font-size: 20px;
+                    font-size: $size - 20;
                 }
             }
     
@@ -132,12 +128,10 @@
             border-style: solid;
             border-width: 5px;
             border-color: #84b6f4;
-            width: 350px;
             background-color: rgb(255, 255, 255);
             text-align: center;
-    
+            @include tamaño-dimensiones(130px,350px);
             margin-top:100px;
-            height: 130px;
     
             font-family: 'Pacifico', cursive;
     
@@ -146,7 +140,7 @@
                 border-width: 5px;
                 border-color: #84b6f4;
                 color: rgb(255, 255, 255);
-                font-size: 30px;
+                font-size: $size - 10;
                 text-align: center;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 background-color:aqua;
@@ -154,7 +148,7 @@
             }
     
             p {
-                font-size: 20px;
+                font-size: $size - 20;
                 padding-top: 10px;
             }
     
@@ -164,7 +158,7 @@
     }
 
     .redes-sociales {
-        height: 2000px;
+        height: 1300px;
         background-color: #FFA0D4;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
         background-attachment: fixed;
@@ -177,38 +171,46 @@
             padding: 20px;
         }
 
-        .red {
-            
-            h3 {
-                text-align: center;
-                background-color: rgb(251, 251, 251);
-                margin: auto;
-                width: 400px;
-                padding: 20px;
-                margin-top: 15px;
-            }
+        .pre-red {
+            padding-top: 100px;
+            display: grid;
+            grid-template-columns: auto auto;
 
-            p {
-                text-align: center;
-                color: #c33b80;
-                padding-top: 30px;
-                font-size: 25px;
+            .red {
+            
+                h3 {
+                    text-align: center;
+                    background-color: rgb(251, 251, 251);
+                    margin: auto;
+                    width: 400px;
+                    padding: 20px;
+                    margin-top: 15px;
+                }
+    
+                p {
+                    text-align: center;
+                    color: #c33b80;
+                    padding-top: 30px;
+                    font-size: $size - 15;
+                    width: 500px;
+                    margin-left: 100px;
+                }
+    
+                img {
+                    @include tamaño-dimensiones(600px,500px);
+                }
+    
                 
-            }
-
-            img {
-                height: 700px;
-                width: 600px;
-            }
-
-            
-            a {
-                width: 300px;
-                margin: auto;
-                margin-top: 10px;
-                margin-bottom: 10px;
+                a {
+                    width: 300px;
+                    margin: auto;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
             }
         }
+
+        
     }
 }
 
@@ -217,7 +219,7 @@
     border-style:solid;
     border-width: 10px;
     height: 800px;
-    background-image: url(../public/fondo-horarios.jpg);
+    background-image: url("../public/fondo-horarios.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -228,8 +230,7 @@
         margin:0 auto;
         border-style: dashed;
         border-width: 10px;
-        width: 380px;
-        height:780px;
+        @include tamaño-dimensiones(780px,380px);
         background-color: rgb(236, 195, 15);
     
         display: flex;
@@ -250,14 +251,13 @@
 /* inicio  seccion atencion al cliente */
 
 .contenido-atencion {
-    background-image: url(../public/fondo-atencion-clientes.jpg);
+    background-image: url("../public/fondo-atencion-clientes.jpg");
     background-size: contain;
     background-repeat:round;
 
     .sugerencia {
         background-color: $background-sugerencia;
-        width: 700px;
-        height: 700px;
+        @include tamaño-dimensiones(700px,700px);
         margin: auto;
 
         .titulo-sugerencia {
@@ -272,12 +272,12 @@
             align-items: center;
             justify-content: center;
         
-            font-size: 15px;
+            font-size: $size - 25;
             color: rgb(10, 10, 10);
 
             h1{
                 
-                font-size: 35px;
+                font-size: $size - 5;
                 font-weight: bold;
                 
             }
@@ -297,7 +297,7 @@
 /* inicio seccion ubicacion */
 
 .contenido-ubicacion {
-    background-image: url(../public/atencion-cliente-fondo.jpg);
+    background-image: url("../public/atencion-cliente-fondo.jpg");
     background-size: contain;
     background-repeat: space;
 
@@ -313,12 +313,13 @@
         background-color: blanchedalmond;
         width: 650px;
         height: 600px;
+        @include tamaño-dimensiones(600px,650px);
         margin: auto;
 
         .ubicacion-titulo {
             grid-area: titulo;
             padding-top: 20px;
-            font-size: 30px;
+            font-size: $size - 10;
             font-family: 'Abril Fatface', cursive;  
             margin: 0; 
         }
@@ -328,7 +329,7 @@
         }
 
         .ubicacion-informacion {
-            font-size: 15px;
+            font-size: $size - 25;
             font-family: 'Pacifico', cursive;
             text-align: center;
         
@@ -344,8 +345,7 @@
                 grid-area: mapa;
 
                 li iframe {
-                    height: 400px;
-                    width: 550px;
+                    @include tamaño-dimensiones(400px,550px);
                     padding-right: 30px;
                 }
             }
@@ -375,14 +375,14 @@
             flex-direction: column;
 
             h2 {
-                font-size: 30px;
+                font-size: $size - 10;
                 font-family: 'Abril Fatface', cursive;  
                 color: $color-rosa;
                 text-align: center;
             }
             
             h3 {
-                font-size: 25px;
+                font-size: $size - 15;
                 font-family: 'Pacifico', cursive;
                 background-color: $color-rosa;
                 text-align: center;
@@ -391,14 +391,13 @@
             
             p {
                 max-width: 600px;
-                font-size: 20px;
+                font-size: $size - 20;
                 font-family: 'Pacifico', cursive;
             }
         }
 
         img {
-            width: 400px;
-            height: 400px;
+            @include tamaño-dimensiones(400px,400px);
             margin: 20px 20px;
         }
     }
@@ -413,7 +412,7 @@
             width: 500px;
             margin: auto;
             text-align: center;
-            font-size: 30px;
+            font-size: $size - 10;
             font-family: 'Abril Fatface', cursive;  
             color: #84b6f4;
             background-color: $color-rosa;
@@ -441,15 +440,14 @@
             h2 {
                 font-family: 'Pacifico', cursive;
                 background-color:$color-rosa ; 
-                font-size: 20px;
+                font-size: $size - 20;
             
                 height: 30px;
                 line-height: 30px;
             }
 
             img {
-                width: 250px;
-                height: 250px;
+                @include tamaño-dimensiones(250px,250px);
                 align-self: center;
             }
         }
@@ -466,7 +464,7 @@
             width: 500px;
             margin: auto;
             text-align: center;
-            font-size: 30px;
+            font-size: $size - 10;
             font-family: 'Abril Fatface', cursive;  
             color: #84b6f4;
             background-color: $color-rosa;
@@ -484,9 +482,8 @@
         .bebidas-productos {
             background-color: aliceblue;
             margin: 30px;
-            width: 300px;
             text-align: center;
-            height: 330px;
+            @include tamaño-dimensiones(330px,300px);
         
             display: flex;
             flex-direction: column;
@@ -494,14 +491,13 @@
             h2 {
                 font-family: 'Pacifico', cursive;
                 background-color:$color-rosa ; 
-                font-size: 20px;
+                font-size: $size - 20;
                 height: 30px;
                 line-height: 30px;
             }
 
             img {
-                width: 250px;
-                height: 250px;
+                @include tamaño-dimensiones(250px,250px);
                 align-self: center;
             }
         }
@@ -512,7 +508,7 @@
     // pagina pedidos
 
     .el-titulo-pedidos {
-        background-image: url(../public/fondo-pedidos.jpg);
+        background-image: url("../public/fondo-pedidos.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: inherit;
@@ -520,7 +516,7 @@
     
         h1 {
             padding-top: 150px;
-            font-size: 50px;
+            font-size: $size+10;
             text-align: center;
             color:#FFFFFF;
             font-weight: bold;
@@ -530,7 +526,7 @@
         p {
             margin-top: 200px;
             margin-right: 20px;
-            font-size: 10px;
+            font-size: $size - 30;
             color:rgb(138, 137, 137) ;
             text-align: end;
         }
@@ -561,9 +557,8 @@
                 width: 600px;
         
                 label {
-                    font-size: 20px;
+                    font-size: $size - 20;
                     font-family: 'Vesper Libre', serif;
-                    
                 }
         
                 input {
@@ -591,8 +586,7 @@
         }
     
         img {
-            height: 350px;
-            width: 350px;
+            @include tamaño-dimensiones(350px,350px);
             margin-left: 0;
             margin-top: 180px;
             margin-right: 20px;
