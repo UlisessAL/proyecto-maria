@@ -256,7 +256,7 @@
         font-family: 'Abril Fatface', cursive;  
         color: rgb(20, 2, 2);
         text-align: center;
-        font-size: 10px;
+        font-size: $size - 30;
     }
 }
 
@@ -266,7 +266,7 @@
 .sugerencia {
     background-color: $background-sugerencia;
     margin: auto;
-    height: 550px;
+    height: 600px;
 
     .titulo-sugerencia {
         padding-top: 50px;
