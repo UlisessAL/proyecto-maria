@@ -1,7 +1,9 @@
-/* inicio configuracion media para 1280px */
+// Inicio configuracion media para 1280px 
 
 @media screen and (min-width:1280px) {
-    /* nav del index */
+
+    // Nav del index 
+
     .encabezado-index {
         .navbar{
             .logo-nav img {
@@ -11,7 +13,8 @@
         }
     }
 
-// nav de ubicacion y atencion al cliente
+// Nav de ubicacion y atencion al cliente
+
     .encabezado {
         .navbar{
             .logo-nav img {
@@ -21,7 +24,8 @@
         }
     }
 
-    // nav productos
+    // Nav productos
+
     .encabezado-productos {
         .navbar{
             .logo-nav img {
@@ -31,7 +35,7 @@
         }
     }
 
-    /* inicio del encabezado del index*/
+    // Inicio del encabezado del index
 .cuerpo {
 
     .informacion {
@@ -193,7 +197,7 @@
                     padding-top: 30px;
                     font-size: $size - 15;
                     width: 500px;
-                    margin-left: 100px;
+                    margin: auto;
                 }
     
                 img {
@@ -209,8 +213,6 @@
                 }
             }
         }
-
-        
     }
 }
 
@@ -248,7 +250,7 @@
     }
 }
 
-/* inicio  seccion atencion al cliente */
+// Inicio  seccion atencion al cliente 
 
 .contenido-atencion {
     background-image: url("../public/fondo-atencion-clientes.jpg");
@@ -294,7 +296,7 @@
     }
 }
 
-/* inicio seccion ubicacion */
+// Inicio seccion ubicacion 
 
 .contenido-ubicacion {
     background-image: url("../public/atencion-cliente-fondo.jpg");
@@ -353,7 +355,7 @@
     }
 }
 
-/* inicio seccion productos */
+// Inicio seccion productos 
 
 .producto {
     background-color: #FFFFFF;
@@ -505,7 +507,7 @@
 }
 
 
-    // pagina pedidos
+    // Inicio pagina pedidos
 
     .el-titulo-pedidos {
         background-image: url("../public/fondo-pedidos.jpg");
@@ -547,40 +549,42 @@
         .pedidos {
             display: flex;
             flex-direction: column;
-    
             padding-top: 40px;
-    
-            .info-pedidos {
-                display: flex;
-                flex-direction: column;
-                margin: 50px;
-                width: 600px;
+
+            form {
+
+                .info-pedidos {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 50px;
+                    width: 600px;
+            
+                    label {
+                        font-size: $size - 20;
+                        font-family: 'Vesper Libre', serif;
+                    }
+            
+                    input {
+                        height: 40px;
+                        border: 0;
+                        border-radius: 10px;
+                    }
         
-                label {
-                    font-size: $size - 20;
-                    font-family: 'Vesper Libre', serif;
-                }
-        
-                input {
-                    height: 40px;
-                    border: 0;
-                    border-radius: 10px;
-                }
-    
-                textarea {
-                    border: 0;
-                    border-radius: 10px;
-                }
-        
-                .boton {
-                    font-size: 15px;
-                    margin: auto;
-                    margin-top: 20px;
-                    width:150px;
-                    background-color:#c33b80;
-                    border-color: $color-rosa;
-                    border-radius: 100px;
-                    color: #FFFFFF;
+                    textarea {
+                        border: 0;
+                        border-radius: 10px;
+                    }
+            
+                    .boton {
+                        font-size: 15px;
+                        margin: auto;
+                        margin-top: 20px;
+                        width:150px;
+                        background-color:#c33b80;
+                        border-color: $color-rosa;
+                        border-radius: 100px;
+                        color: #FFFFFF;
+                    }
                 }
             }
         }
@@ -588,10 +592,9 @@
         img {
             @include tamaño-dimensiones(350px,350px);
             margin-left: 0;
-            margin-top: 180px;
+            margin-top: 120px;
             margin-right: 20px;
         }
-        
     }
     
 }

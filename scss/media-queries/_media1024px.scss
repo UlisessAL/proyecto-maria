@@ -1,7 +1,10 @@
-/* inicio resolucion 1024px para solucionar un problema en la imagen de fondo de la pagina ubicacion */
+
+// Inicio resolucion 1024px para solucionar un problema en la imagen de fondo de la pagina ubicacion 
+
 @media screen and (min-width: 1024px){
     
-    /* Ubicacion */
+    // Ubicacion 
+
         .contenido-ubicacion {
         background-image: url("../public/atencion-cliente-fondo.jpg");
         background-size: contain;

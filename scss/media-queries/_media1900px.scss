@@ -1,8 +1,8 @@
-/* inicio de la configuracion media para 1900px */
+// Inicio de la configuracion media para 1900px 
 
 @media screen and (min-width:1900px) {
 
-    /* inicio del index.html */
+// Inicio del index.html 
 
     .encabezado-index {
 
@@ -177,7 +177,7 @@
                         padding-top: 30px;
                         font-size: $size - 10;
                         width: 600px;
-                        margin-left: 320px;
+                        margin: auto;
                     }
     
                     img {
@@ -194,7 +194,7 @@
         }
     }
 
-    /* estilo del footer */
+    // Estilo del footer 
 
 .footer {
     background-color:#fffec2 ;
@@ -206,7 +206,7 @@
         font-size: $size - 30;
     }
 }
-/* inicio  seccion atencion al cliente */
+// Inicio  seccion atencion al cliente 
 
 .contenido-atencion {
     background-image: url("../public/fondo-atencion-clientes.jpg");
@@ -261,7 +261,7 @@
     }
 }
 
-/* inicio seccion ubicacion */
+// Inicio seccion ubicacion 
 
 .contenido-ubicacion {
     background-image: url("../public/atencion-cliente-fondo.jpg");
@@ -312,7 +312,7 @@
 
 
 
-/* inicio seccion productos */
+// Inicio seccion productos 
 
 .producto {
     
@@ -501,52 +501,50 @@
         display: flex;
         flex-direction: column;
 
-        .info-pedidos {
-            display: flex;
-            flex-direction: column;
-            margin: 50px;
-            width: 800px;
+        form {
+            
+            .info-pedidos {
+                display: flex;
+                flex-direction: column;
+                margin: 50px;
+                width: 800px;
+        
+                label {
+                    font-size: $size - 10;
+                    font-family: 'Vesper Libre', serif;
+                }
+        
+                input {
+                    height: 40px;
+                    border: 0;
+                    border-radius: 10px;
+                }
     
-            label {
-                font-size: $size - 10;
-                font-family: 'Vesper Libre', serif;
+                textarea {
+                    border: 0;
+                    border-radius: 10px;
+                }
+        
+                .boton {
+                    font-size: $size - 20;
+                    margin: auto;
+                    margin-top: 20px;
+                    width:150px;
+                    background-color:#c33b80;
+                    border-color: $color-rosa;
+                    border-radius: 100px;
+                    color: #FFFFFF;
+                }
             }
-    
-            input {
-                height: 40px;
-                border: 0;
-                border-radius: 10px;
-            }
-
-            textarea {
-                border: 0;
-                border-radius: 10px;
-            }
-    
-            .boton {
-                font-size: $size - 20;
-                margin: auto;
-                margin-top: 20px;
-                width:150px;
-                background-color:#c33b80;
-                border-color: $color-rosa;
-                border-radius: 100px;
-                color: #FFFFFF;
-            }
-        }
+        }        
     }
 
     img {
         @include tamaño-dimensiones(550px,550px);
         margin-left: 0;
-        margin-top: 100px;
+        margin-top: 0;
         margin-right: 0;
     }
 }
-
-
-
-
-
 
 }

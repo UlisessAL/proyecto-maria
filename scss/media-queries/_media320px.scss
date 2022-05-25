@@ -1,4 +1,4 @@
-/* inicio del encabezado del index*/
+//  inicio del encabezado del index
 
 .encabezado-index {
 
@@ -22,6 +22,7 @@
     }
     
 }
+
 // encabezado productos
 
 .encabezado-productos {
@@ -140,7 +141,6 @@
     
         }
         
-        // Uso del Extend
         .pet-friendly {
                     @extend .horarios;
     
@@ -193,35 +193,41 @@
             padding: 20px;
         }
 
-        .red {
+        .pre-red {
+
+            .red {
             
-            h3 {
-                text-align: center;
-                background-color: rgb(251, 251, 251);
-                margin: auto;
-                width: 200px;
-                padding: 20px;
-                margin-top: 15px;
-            }
-
-            p {
-                text-align: center;
-                color: #c33b80;
-                padding-top: 30px;
-                font-size: $size - 25;
-                font-weight: bold;
-            }
-
-            img {
-                @include tamaño-dimensiones (400px,300px);
-            }
-
-            
-            a {
-                width: 200px;
-                margin: auto;
-                margin-top: 10px;
-                margin-bottom: 10px;
+                h3 {
+                    text-align: center;
+                    background-color: rgb(251, 251, 251);
+                    margin: auto;
+                    width: 200px;
+                    padding: 20px;
+                    margin-top: 15px;
+                }
+    
+                p {
+                    text-align: center;
+                    color: #c33b80;
+                    padding-top: 30px;
+                    padding-bottom: 10px;
+                    font-size: $size - 25;
+                    font-weight: bold;
+                    width: 250px;
+                    margin: auto;
+                }
+    
+                img {
+                    @include tamaño-dimensiones (400px,300px);
+                }
+    
+                
+                a {
+                    width: 200px;
+                    margin: auto;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
             }
         }
     }
@@ -240,7 +246,7 @@
 
 }
 
-/* estilo del footer */
+//  estilo del footer 
 
 .footer {
     background-color:#fffec2 ;
@@ -255,7 +261,7 @@
 }
 
 
-/* inicio estilo atencion al cliente */
+//  inicio estilo atencion al cliente 
 
 .sugerencia {
     background-color: $background-sugerencia;
@@ -294,7 +300,7 @@
     }
 }
 
-/* inicio estilo ubicacion */
+//  inicio estilo ubicacion 
 
 .contenido-ubicacion {
     background-color: $background-sugerencia;
@@ -336,27 +342,7 @@
 }
 
 
-/* inicio estilo productos */
-
-// Navbar productos
-
-.encabezado-productos {
-
-    .navbar {
-        background-color: $color-rosa;
-
-        .logo-nav img {
-            @include tamaño-dimensiones(50px,50px);
-            position: relative;
-        }
-        
-        .nav-link {
-            font-size: $size - 20;
-        }
-
-    }
-    
-}
+//  inicio estilo productos 
 
 .producto {
     background-color: #FFFFFF;
@@ -521,7 +507,7 @@
             display: flex;
             flex-direction: column;
         
-            /* Transiciones */
+            // Transiciones 
             transition-property: all;
             transition-duration: 1s;
             transition-timing-function: ease;
@@ -550,7 +536,7 @@
     
 }
 
-// pagina pedidos
+// Inicio pagina pedidos
 
 .el-titulo-pedidos {
     background-image: url("../public/fondo-pedidos.jpg");
@@ -589,39 +575,43 @@
         display: flex;
         flex-direction: column;
 
-        .info-pedidos {
-            display: flex;
-            flex-direction: column;
-            margin: 50px;
-            width: 250px;
+        form {
+
+            .info-pedidos {
+                display: flex;
+                flex-direction: column;
+                margin: 50px;
+                width: 250px;
+        
+                label {
+                    font-size: $size - 20;
+                    font-family: 'Vesper Libre', serif;
+                    
+                }
+        
+                input {
+                    height: 40px;
+                    border: 0;
+                    border-radius: 10px;
+                }
     
-            label {
-                font-size: $size - 20;
-                font-family: 'Vesper Libre', serif;
-                
-            }
-    
-            input {
-                height: 40px;
-                border: 0;
-                border-radius: 10px;
+                textarea {
+                    border: 0;
+                    border-radius: 10px;
+                }
+        
+                .boton {
+                    font-size: $size - 25;
+                    margin: auto;
+                    margin-top: 20px;
+                    width:150px;
+                    background-color:#c33b80;
+                    border-color: $color-rosa;
+                    border-radius: 100px;
+                    color: #FFFFFF;
+                }
             }
 
-            textarea {
-                border: 0;
-                border-radius: 10px;
-            }
-    
-            .boton {
-                font-size: $size - 25;
-                margin: auto;
-                margin-top: 20px;
-                width:150px;
-                background-color:#c33b80;
-                border-color: $color-rosa;
-                border-radius: 100px;
-                color: #FFFFFF;
-            }
         }
     }
 
